@@ -16,7 +16,7 @@ The goal of this lab series is to demonstrate practical skills in **Server Harde
 | :--- | :--- | :--- | :---: | :---: |
 | **01** | **Firewall Setup (UFW)** | Default Deny, Custom Ports, Rate Limiting | [View](./Linux-Hardening/Lab01-UFW/) | [▶️ Watch](https://youtu.be/zgGrlMZAEcM?si=7BIBb2fDivcXyXvT) |
 | **02** | **SSH Keys Deployment** | Key-based Auth, Disabled Passwords | [View](./Linux-Hardening/Lab02-SSH-Hardening/) | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc?si=N_8zF6iiQzuUbGzZ) |
-| **03** | **Security Banners** | Legal Compliance, MOTD Configuration | [View](./Linux-Hardening/Lab03-SSH-Banners/) | [⏳ Coming Soon](#) |
+| **03** | **Security Banners** | Legal Compliance, MOTD Configuration | [View](./Linux-Hardening/Lab03-SSH-Banners/) | [▶️ Watch](https://youtu.be/ILBxHbIw74Y?si=rtvEuH8rrbG4klGm) |
 | **04** | **Final Automation** | All-in-one Security Deployment Script | [View](./Linux-Hardening/Lab04-Final-Automation/) | [⏳ Planned](#) |
 
 ---
