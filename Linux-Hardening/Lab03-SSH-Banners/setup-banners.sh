@@ -2,7 +2,7 @@
 
 # 0. Root privilege check
 if [ "$EUID" -ne 0 ]; then
-  echo -e "\e[31m[!] Error: Please run as root: sudo ./setup_lab3.sh\e[0m"
+  echo -e "\e[31m[!] Error: Please run as root: sudo ./setup-banners.sh\e[0m"
   exit
 fi
 
@@ -19,13 +19,20 @@ fi
 echo -e "\e[34m[#] Initializing SOC Lab #3 for user: $REAL_USER\e[0m"
 echo -e "\e[34m[#] Target configuration file: $CONF_FILE\e[0m"
 
-# 2. SSH Banner Setup
-BANNER_PATH="$USER_HOME/Desktop/mybanner.txt"
-if [ -f "$BANNER_PATH" ]; then
-    echo -e "\e[32m[+] Deploying SSH Banner from Desktop...\e[0m"
+# 2. SSH Banner Setup (tries: script dir, Desktop, Desktop .txt)
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BANNER_PATH=""
+for p in "$SCRIPT_DIR/mybanner" "$SCRIPT_DIR/mybanner.txt" "$USER_HOME/Desktop/mybanner" "$USER_HOME/Desktop/mybanner.txt"; do
+    if [ -f "$p" ]; then
+        BANNER_PATH="$p"
+        break
+    fi
+done
+if [ -n "$BANNER_PATH" ]; then
+    echo -e "\e[32m[+] Deploying SSH Banner from $BANNER_PATH\e[0m"
     cp "$BANNER_PATH" /etc/issue.net
 else
-    echo -e "\e[33m[!] Warning: ~/Desktop/mybanner.txt not found. Skipping banner copy...\e[0m"
+    echo -e "\e[33m[!] Warning: No banner file found (mybanner or mybanner.txt in script dir or Desktop). Skipping...\e[0m"
 fi
 
 # 3. SSH Hardening (Port 2222 & Banner Activation)

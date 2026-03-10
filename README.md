@@ -12,12 +12,14 @@ The goal of this lab series is to demonstrate practical skills in **Server Harde
 ## 🚀 Lab Series: Roadmap & Progress
 
 
-| # | Laboratory Name | Focus Areas | Documentation | Video Guide |
-| :--- | :--- | :--- | :---: | :---: |
+| #      | Laboratory Name          | Focus Areas | Documentation | Video Guide |
+|:-------|:-------------------------| :--- | :---: | :---: |
 | **01** | **Firewall Setup (UFW)** | Default Deny, Custom Ports, Rate Limiting | [View](./Linux-Hardening/Lab01-UFW/) | [▶️ Watch](https://youtu.be/zgGrlMZAEcM?si=7BIBb2fDivcXyXvT) |
-| **02** | **SSH Keys Deployment** | Key-based Auth, Disabled Passwords | [View](./Linux-Hardening/Lab02-SSH-Hardening/) | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc?si=N_8zF6iiQzuUbGzZ) |
-| **03** | **Security Banners** | Legal Compliance, MOTD Configuration | [View](./Linux-Hardening/Lab03-SSH-Banners/) | [▶️ Watch](https://youtu.be/ILBxHbIw74Y?si=rtvEuH8rrbG4klGm) |
-| **04** | **Final Automation** | All-in-one Security Deployment Script | [View](./Linux-Hardening/Lab04-Final-Automation/) | [⏳ Planned](#) |
+| **02** | **SSH Keys Deployment**  | Key-based Auth, Disabled Passwords | [View](./Linux-Hardening/Lab02-SSH-Hardening/) | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc?si=N_8zF6iiQzuUbGzZ) |
+| **03** | **Security Banners**     | Legal Compliance, MOTD Configuration | [View](./Linux-Hardening/Lab03-SSH-Banners/) | [▶️ Watch](https://youtu.be/ILBxHbIw74Y?si=rtvEuH8rrbG4klGm) |
+| **04** | **SSH Agent Forwarding** | Jump Servers, Secure Key Forwarding | [View](./Linux-Hardening/Lab04-SSH-Agent-Forwarding/) | [⏳ Planned](#) |
+| **05** | **Fail2Ban Setup**       | Brute-force Protection | [View](./Linux-Hardening/Lab05-Fail2Ban/) | [⏳ Planned](#) |
+| **06** | **Final Automation**     | All-in-one Security Deployment Script | [View](./Linux-Hardening/Lab06-Final-Automation/) | [⏳ Planned](#) |
 
 ---
 
@@ -33,4 +35,13 @@ The goal of this lab series is to demonstrate practical skills in **Server Harde
 To apply these security measures to your own Linux server:
 1. Clone this repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/jokeez/SOC-Analyst-Training-Lab.git
+   ```
+2. Navigate to the desired lab and run the setup script (see each lab's documentation).
+
+---
+
+## 🌐 Portfolio Website
+**→ [MiroslavSec Portfolio](https://jokeez.github.io/SOC-Analyst-Training-Lab/)** — TryHackMe, Labs, Videos, Connect.
+
+---
