@@ -32,12 +32,42 @@
         });
     }, observerOptions);
 
-    document.querySelectorAll('.lab-card, .video-card, .thm-path-card').forEach(function (el) {
+    function observeCard(el) {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(el);
-    });
+    }
+
+    document.querySelectorAll('.lab-card, .video-card, .thm-path-card').forEach(observeCard);
+
+    // Load videos from JSON (updated by GitHub Action from YouTube)
+    const videoGrid = document.getElementById('video-grid');
+    if (videoGrid) {
+        fetch('data/videos.json')
+            .then(function (r) { return r.json(); })
+            .then(function (videos) {
+                videos.forEach(function (v) {
+                    var card = document.createElement('div');
+                    card.className = 'video-card';
+                    card.innerHTML =
+                        '<div class="video-wrapper">' +
+                        '<iframe src="https://www.youtube.com/embed/' + v.id + '" title="' + escapeHtml(v.title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+                        '</div><p>' + escapeHtml(v.title) + '</p>';
+                    videoGrid.appendChild(card);
+                    observeCard(card);
+                });
+            })
+            .catch(function () {
+                videoGrid.innerHTML = '<p class="section-desc">Videos load from <code>data/videos.json</code>. Run the site from the same origin or check the file.</p>';
+            });
+    }
+
+    function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
 
     // Add visible class styles via JS to avoid extra CSS
     const style = document.createElement('style');

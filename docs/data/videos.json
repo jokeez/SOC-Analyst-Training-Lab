@@ -1,0 +1,18 @@
+[
+  {
+    "id": "zgGrlMZAEcM",
+    "title": "Lab 01: Firewall Setup (UFW)"
+  },
+  {
+    "id": "ULZVP8h6Uvc",
+    "title": "Lab 02: SSH Keys Deployment"
+  },
+  {
+    "id": "ILBxHbIw74Y",
+    "title": "Lab 03: Security Banners"
+  },
+  {
+    "id": "NOCivaFgoXc",
+    "title": "Lab 04: SSH Agent Forwarding"
+  }
+]
