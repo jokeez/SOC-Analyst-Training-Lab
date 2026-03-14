@@ -73,5 +73,3 @@ cd SOC-Analyst-Training-Lab
 ## 🌐 Portfolio
 
 **[MiroslavSec](https://jokeez.github.io/SOC-Analyst-Training-Lab/)** — Labs, TryHackMe, Videos, Connect.
-
-Videos on the site are loaded from `docs/data/videos.json`. To have new YouTube uploads appear automatically, set the repository variable **`YOUTUBE_CHANNEL_ID`** (Settings → Secrets and variables → Actions → Variables). Get your channel ID in YouTube Studio → Settings → Advanced. The workflow runs every 6 hours and on manual trigger.
