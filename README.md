@@ -1,47 +1,75 @@
-# 🛡️ SOC Analyst Training Lab: Linux Hardening & Automation
+# 🛡️ SOC Analyst Training Lab
 
-Welcome to my **SOC Analyst Training Lab**. This repository documents my journey in mastering Linux security, automated hardening, and defensive operations.
+**MiroslavSec** — Linux hardening, pentest tools, TryHackMe, hands-on practice.
 
 ---
 
 ## 🎯 Project Objective
-The goal of this lab series is to demonstrate practical skills in **Server Hardening**, implementing security policies, and automating defensive measures using **Bash scripting**. These labs are essential for any aspiring SOC Analyst or Security Engineer.
+
+Demonstrate practical skills in **Server Hardening**, **Network Reconnaissance**, and **Security Tools** (Nmap, Hydra, John, Metasploit). For aspiring SOC Analysts and Security Engineers.
 
 ---
 
-## 🚀 Lab Series: Roadmap & Progress
+## 📺 Video Index
 
+| Playlist | Topics | Status |
+|:---------|:-------|:------:|
+| **SOC Labs** | UFW, SSH, Banners, Agent Forwarding, Fail2Ban | 01–04 ✅ · 05–06 ⏳ |
+| **Nmap** | Discovery, Port Scan, Scripts | ⏳ |
+| **Pentest Tools** | Hydra, John, Hashcat | ⏳ |
 
-| #      | Laboratory Name          | Focus Areas | Documentation | Video Guide |
-|:-------|:-------------------------| :--- | :---: | :---: |
-| **01** | **Firewall Setup (UFW)** | Default Deny, Custom Ports, Rate Limiting | [View](./Linux-Hardening/Lab01-UFW/) | [▶️ Watch](https://youtu.be/zgGrlMZAEcM?si=7BIBb2fDivcXyXvT) |
-| **02** | **SSH Keys Deployment**  | Key-based Auth, Disabled Passwords | [View](./Linux-Hardening/Lab02-SSH-Hardening/) | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc?si=N_8zF6iiQzuUbGzZ) |
-| **03** | **Security Banners**     | Legal Compliance, MOTD Configuration | [View](./Linux-Hardening/Lab03-SSH-Banners/) | [▶️ Watch](https://youtu.be/ILBxHbIw74Y?si=rtvEuH8rrbG4klGm) |
-| **04** | **SSH Agent Forwarding** | Jump Servers, Secure Key Forwarding | [View](./Linux-Hardening/Lab04-SSH-Agent-Forwarding/) | [⏳ Planned](#) |
-| **05** | **Fail2Ban Setup**       | Brute-force Protection | [View](./Linux-Hardening/Lab05-Fail2Ban/) | [⏳ Planned](#) |
-| **06** | **Final Automation**     | All-in-one Security Deployment Script | [View](./Linux-Hardening/Lab06-Final-Automation/) | [⏳ Planned](#) |
-
----
-
-## 🛠️ Technical Stack
-*   **Automation**: Bash Scripting (Shell)
-*   **Network Security**: Uncomplicated Firewall (UFW)
-*   **Access Control**: SSH Hardening (OpenSSH)
-*   **System Auditing**: Linux Server Security Policies
+### SOC Labs
+| # | Lab | Video |
+|:--|:----|:------|
+| 01 | Firewall (UFW) | [▶️](https://youtu.be/zgGrlMZAEcM) |
+| 02 | SSH Keys | [▶️](https://youtu.be/ULZVP8h6Uvc) |
+| 03 | Security Banners | [▶️](https://youtu.be/ILBxHbIw74Y) |
+| 04 | SSH Agent Forwarding | [▶️](https://youtu.be/NOCivaFgoXc) |
+| 05 | Fail2Ban | ⏳ |
+| 06 | Final Automation | ⏳ |
 
 ---
 
-## ⚙️ How to Deploy
-To apply these security measures to your own Linux server:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/jokeez/SOC-Analyst-Training-Lab.git
-   ```
-2. Navigate to the desired lab and run the setup script (see each lab's documentation).
+## 📁 Structure
+
+### Linux Hardening (SOC Labs)
+| # | Lab | Focus |
+|:--|:----|:------|
+| 01 | [Firewall (UFW)](./Linux-Hardening/Lab01-UFW/) | Default Deny, Rate Limiting |
+| 02 | [SSH Keys](./Linux-Hardening/Lab02-SSH-Hardening/) | Key-based Auth |
+| 03 | [Security Banners](./Linux-Hardening/Lab03-SSH-Banners/) | MOTD, Legal |
+| 04 | [SSH Agent Forwarding](./Linux-Hardening/Lab04-SSH-Agent-Forwarding/) | Jump Servers |
+| 05 | [Fail2Ban](./Linux-Hardening/Lab05-Fail2Ban/) | Brute-force Protection |
+| 06 | [Final Automation](./Linux-Hardening/Lab06-Final-Automation/) | All-in-one Script |
+
+### Pentest & Recon
+| Tool | Sections |
+|:-----|:---------|
+| [Nmap](./Pentest/nmap/) | [01 Discovery](./Pentest/nmap/01-discovery/) — Host discovery, TCP SYN ping |
+| [Hydra](./Pentest/hydra/) | SSH, HTTP, FTP (⏳ planned) |
+
+In pentest folders: `README.md`, `commands.md` (flag cheat sheet from video), scripts.
 
 ---
 
-## 🌐 Portfolio Website
-**→ [MiroslavSec Portfolio](https://jokeez.github.io/SOC-Analyst-Training-Lab/)** — TryHackMe, Labs, Videos, Connect.
+## 📋 Lab Order (SOC)
+
+1. **Lab 02** (SSH Keys) — add your key first  
+2. **Lab 03** (Banners) — SSH port 2222  
+3. **Lab 01** (UFW) — open port 2222  
 
 ---
+
+## ⚙️ Quick Deploy
+
+```bash
+git clone https://github.com/jokeez/SOC-Analyst-Training-Lab.git
+cd SOC-Analyst-Training-Lab
+# See lab docs for scripts
+```
+
+---
+
+## 🌐 Portfolio
+
+**[MiroslavSec](https://jokeez.github.io/SOC-Analyst-Training-Lab/)** — Labs, TryHackMe, Videos, Connect.

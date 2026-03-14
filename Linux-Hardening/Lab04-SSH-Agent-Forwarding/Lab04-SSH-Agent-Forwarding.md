@@ -16,4 +16,4 @@ SSH Agent Forwarding allows you to use your local SSH keys on remote servers as 
 4. **Jump to the next one**: From Server A, run `ssh user@server_b` without any passwords!
 
 ---
-**Status:** 🏗️ In Progress (Implementation phase)
+**Status:** ✅ Completed — demo in video: [Lab 04: SSH Agent Forwarding](https://youtu.be/NOCivaFgoXc)

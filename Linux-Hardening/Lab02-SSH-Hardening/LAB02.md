@@ -14,6 +14,7 @@ To eliminate the risk of brute-force and credential-stuffing attacks by hardenin
 *   **Service Integrity**: Automatically restarts the SSH daemon to apply changes and verifies the service status.
 
 ### 🚀 Usage Instruction
+**Run this lab first.** Then Lab 03 (banners, port 2222), then Lab 01 (UFW).
 1. **Critical:** Ensure your public SSH key is already added to `~/.ssh/authorized_keys` before running this script, or you will lose access!
 2. Make the script executable:
    ```bash

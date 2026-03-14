@@ -13,6 +13,9 @@ Minimize the server's "attack surface" by implementing a **Default Deny** policy
 *   **Web Standard Access**: Opens ports 80 (HTTP) and 443 (HTTPS) for web traffic.
 *   **Active Monitoring**: Enables UFW logging, which is essential for a **SOC Analyst** to monitor suspicious traffic in `/var/log/ufw.log`.
 
+### ⚠️ Important
+Run **Lab 02** and **Lab 03** first. This script allows SSH on port **2222**. If SSH is still on port 22, you may lose access. Lab 03 switches SSH to 2222.
+
 ### 🚀 Usage Instruction
 1. Make the script executable:
    ```bash

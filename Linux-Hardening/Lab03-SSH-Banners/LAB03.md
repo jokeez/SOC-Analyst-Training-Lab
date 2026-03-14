@@ -8,6 +8,7 @@ In this laboratory work, we implement essential security measures for an SSH ser
 - **Productivity Kit:** Custom Zsh/Bash aliases for real-time monitoring.
 
 ## 🚀 How to Deploy
+**Recommended:** Run Lab 02 (SSH Keys) first to avoid lockout. Run Lab 01 (UFW) after this lab — UFW allows port 2222, which Lab 03 configures.
 1. **Prepare your banner:** Use the provided `mybanner` file in this directory.
 2. **Run the automation script:**
    ```bash

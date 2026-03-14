@@ -197,6 +197,10 @@ body {
     opacity: 0.8;
 }
 
+.lab-card.lab-pentest .lab-number {
+    color: var(--magenta);
+}
+
 .lab-number {
     display: inline-block;
     font-family: var(--font-heading);
@@ -242,6 +246,28 @@ body {
     background: rgba(224, 64, 251, 0.2);
     color: var(--magenta);
     border-radius: 4px;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+/* Playlist tabs */
+.playlist-tabs {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.playlist-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: default;
+}
+.playlist-tab.active {
+    color: var(--cyan);
+    border-color: var(--cyan);
+    background: rgba(0, 212, 255, 0.08);
 }
 
 /* TryHackMe - Hero link */

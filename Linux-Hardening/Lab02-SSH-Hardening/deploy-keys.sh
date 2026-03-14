@@ -37,5 +37,5 @@ fi
 # 5. Final Verification
 echo "--------------------------------------"
 echo "[DONE] SSH is now secured."
-systemctl status ssh | grep Active
+sudo systemctl status ssh | grep Active
 echo "--------------------------------------"
