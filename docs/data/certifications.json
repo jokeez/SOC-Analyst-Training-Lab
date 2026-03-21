@@ -1,0 +1,18 @@
+[
+  {
+    "title": "SOC Level 1",
+    "issuer": "TryHackMe",
+    "date": "2026-03",
+    "status": "earned",
+    "credential_url": "https://tryhackme.com/path/outline/soclevel1",
+    "description": "Foundational SOC workflow: alert triage, log analysis, and incident response basics."
+  },
+  {
+    "title": "SOC Level 2",
+    "issuer": "TryHackMe",
+    "date": "Planned",
+    "status": "planned",
+    "credential_url": "https://tryhackme.com/path/outline/soclevel2",
+    "description": "Advanced detection and investigation scenarios for blue team progression."
+  }
+]

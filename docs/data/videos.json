@@ -1,22 +1,27 @@
 [
   {
     "id": "zgGrlMZAEcM",
-    "title": "Lab 01: Firewall Setup (UFW)"
+    "title": "Lab 01: Firewall Setup (UFW)",
+    "track": "linux"
   },
   {
     "id": "ULZVP8h6Uvc",
-    "title": "Lab 02: SSH Keys Deployment"
+    "title": "Lab 02: SSH Keys Deployment",
+    "track": "linux"
   },
   {
     "id": "ILBxHbIw74Y",
-    "title": "Lab 03: Security Banners"
+    "title": "Lab 03: Security Banners",
+    "track": "linux"
   },
   {
     "id": "NOCivaFgoXc",
-    "title": "Lab 04: SSH Agent Forwarding"
+    "title": "Lab 04: SSH Agent Forwarding",
+    "track": "linux"
   },
   {
     "id": "KGf3O-4LXkQ",
-    "title": "Lab 05: Fail2Ban Setup"
+    "title": "Lab 05: Fail2Ban Setup",
+    "track": "linux"
   }
 ]

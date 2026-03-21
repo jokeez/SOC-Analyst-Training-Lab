@@ -36,6 +36,35 @@
             </div>
         </section>
 
+        <section id="proof" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Portfolio Proof</h2>
+                <p class="section-desc">Quick snapshot of progress and consistency.</p>
+                <div class="proof-grid">
+                    <article class="proof-card">
+                        <span class="proof-label">Linux Labs</span>
+                        <strong class="proof-value">06</strong>
+                        <span class="proof-meta">Completed</span>
+                    </article>
+                    <article class="proof-card">
+                        <span class="proof-label">Videos Published</span>
+                        <strong class="proof-value" id="video-count">05</strong>
+                        <span class="proof-meta">YouTube walkthroughs</span>
+                    </article>
+                    <article class="proof-card">
+                        <span class="proof-label">Current Focus</span>
+                        <strong class="proof-value">Nmap</strong>
+                        <span class="proof-meta">Discovery -> Port Scan -> NSE</span>
+                    </article>
+                    <article class="proof-card">
+                        <span class="proof-label">Learning Rhythm</span>
+                        <strong class="proof-value">Daily</strong>
+                        <span class="proof-meta">TryHackMe + weekly batch recording</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="tryhackme" class="section tryhackme-section">
             <div class="container">
                 <h2 class="section-title">TryHackMe Journey</h2>
@@ -87,6 +116,43 @@
                     <span class="playlist-tab">Nmap</span>
                     <span class="playlist-tab">Pentest Tools</span>
                 </div>
+            </div>
+        </section>
+
+        <section id="tracks" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Track Status Board</h2>
+                <p class="section-desc">One tool per series. No mixing between tracks.</p>
+                <div class="track-grid">
+                    <article class="track-card done">
+                        <h3>Linux Hardening</h3>
+                        <p>UFW, SSH hardening, banners, forwarding, Fail2Ban, automation.</p>
+                        <span class="badge">Completed</span>
+                    </article>
+                    <article class="track-card progress">
+                        <h3>Nmap</h3>
+                        <p>Discovery done. Port scan and NSE series in progress.</p>
+                        <span class="badge">In Progress</span>
+                    </article>
+                    <article class="track-card planned">
+                        <h3>Hydra</h3>
+                        <p>Dedicated Hydra-only path: SSH, HTTP forms, FTP.</p>
+                        <span class="badge">Planned</span>
+                    </article>
+                    <article class="track-card planned">
+                        <h3>SOC Expansion</h3>
+                        <p>Windows/AD, logging pipeline, SIEM mini incident cases.</p>
+                        <span class="badge">Planned</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-desc">Verified milestones and future certification goals.</p>
+                <div class="cert-grid" id="cert-grid"></div>
             </div>
         </section>
 
@@ -175,6 +241,12 @@
             <div class="container">
                 <h2 class="section-title">Hands-On Videos</h2>
                 <p class="section-desc">Lab walkthroughs on YouTube. New videos appear automatically.</p>
+                <div class="video-filters" id="video-filters">
+                    <button class="video-filter active" type="button" data-track="all">All</button>
+                    <button class="video-filter" type="button" data-track="linux">Linux</button>
+                    <button class="video-filter" type="button" data-track="nmap">Nmap</button>
+                    <button class="video-filter" type="button" data-track="hydra">Hydra</button>
+                </div>
                 <div class="video-grid" id="video-grid"></div>
                 <a href="https://www.youtube.com/@MiroslavSec1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Subscribe on YouTube</a>
             </div>
@@ -204,6 +276,17 @@
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-badges">
+                <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab" target="_blank" rel="noopener noreferrer" aria-label="GitHub Badge">
+                    <img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github" alt="GitHub Portfolio">
+                </a>
+                <a href="https://www.linkedin.com/in/miroslav-u-7152233b5/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Badge">
+                    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn Connect">
+                </a>
+                <a href="https://www.youtube.com/@MiroslavSec1" target="_blank" rel="noopener noreferrer" aria-label="YouTube Badge">
+                    <img src="https://img.shields.io/badge/YouTube-Watch%20Labs-FF0000?style=for-the-badge&logo=youtube" alt="YouTube Watch Labs">
+                </a>
+            </div>
             <p>&copy; MiroslavSec. SOC Analyst Training Lab.</p>
         </div>
     </footer>
