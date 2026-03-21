@@ -684,18 +684,6 @@ body {
     border-top: 1px solid var(--border);
 }
 
-.footer-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-bottom: 0.8rem;
-}
-
-.footer-badges img {
-    height: 28px;
-    border-radius: 6px;
-}
-
 .footer p {
     margin: 0;
     font-size: 0.9rem;

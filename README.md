@@ -105,10 +105,7 @@ Then open the specific lab folder and follow its markdown guide.
 ## 🌐 Portfolio & Profiles
 
 - Website: [MiroslavSec](https://jokeez.github.io/SOC-Analyst-Training-Lab/)
+- Certification Museum: [Certifications](https://jokeez.github.io/SOC-Analyst-Training-Lab/certifications.html)
 - TryHackMe: [MiroslavSEC](https://tryhackme.com/p/MiroslavSEC)
 - YouTube: [MiroslavSec1](https://www.youtube.com/@MiroslavSec1)
 - LinkedIn: [miroslav-u-7152233b5](https://www.linkedin.com/in/miroslav-u-7152233b5/)
-
-[![GitHub Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=flat-square&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
-[![YouTube Watch Labs](https://img.shields.io/badge/YouTube-Watch%20Labs-FF0000?style=flat-square&logo=youtube)](https://www.youtube.com/@MiroslavSec1)

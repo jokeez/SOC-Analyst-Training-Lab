@@ -1,18 +1,18 @@
 [
   {
-    "title": "SOC Level 1",
+    "title": "Pre Security",
     "issuer": "TryHackMe",
-    "date": "2026-03",
+    "date": "2026",
     "status": "earned",
-    "credential_url": "https://tryhackme.com/path/outline/soclevel1",
-    "description": "Foundational SOC workflow: alert triage, log analysis, and incident response basics."
+    "credential_url": "https://tryhackme.com/path/outline/presecurity",
+    "description": "Core cybersecurity foundations: networking basics, Linux/Windows fundamentals, and security concepts."
   },
   {
-    "title": "SOC Level 2",
+    "title": "Cyber Security 101",
     "issuer": "TryHackMe",
     "date": "Planned",
     "status": "planned",
-    "credential_url": "https://tryhackme.com/path/outline/soclevel2",
-    "description": "Advanced detection and investigation scenarios for blue team progression."
+    "credential_url": "https://tryhackme.com/path/outline/cybersecurity101",
+    "description": "Next milestone focused on practical entry-level cyber operations and defensive mindset."
   }
 ]
