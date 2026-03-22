@@ -4,7 +4,7 @@ High-level plan for the repo and video series. One main goal per lab/video; play
 
 ---
 
-## ✅ Done
+## ✅ Done — Linux Hardening
 
 | # | Topic | Focus |
 |:--|:-----|:------|
@@ -13,18 +13,22 @@ High-level plan for the repo and video series. One main goal per lab/video; play
 | 03 | Security Banners | MOTD, legal |
 | 04 | SSH Agent Forwarding | Jump servers, bastion |
 | 05 | Fail2Ban | SSH jail, brute-force mitigation |
-| 06 | Final Automation | Unified hardening workflow (`Lab06-Final-Automation/auto-secure.sh`) |
+| 06 | Final Automation | `auto-secure.sh` — **repo/docs only** (no separate walkthrough video) |
 
 ---
 
-## 🔜 Near term (1–2 months)
+## 🔜 Near term (1–2 months) — Nmap
 
-### Nmap
-| # | Topic | Notes |
-|:--|:------|:------|
-| 01 | Discovery | ✅ Done |
-| 02 | Port Scan | TCP/UDP, version detection, output |
-| 03 | Scripts (NSE) | Safe scripts, basic enum (http, ssh) |
+Six sections in [`Pentest/nmap/`](./Pentest/nmap/); videos added to the site as each is published.
+
+| # | Topic | Focus |
+|:--|:-----|:------|
+| 01 | [Discovery](./Pentest/nmap/01-discovery/) | Host discovery, TCP SYN ping vs ICMP |
+| 02 | [SYN Scan](./Pentest/nmap/02-syn-scan/) | `-sS -Pn` baseline |
+| 03 | [Service Detection](./Pentest/nmap/03-service-detection/) | `-sV`, banners |
+| 04 | [Speed vs Depth](./Pentest/nmap/04-speed-vs-depth/) | Targeted ports vs full range |
+| 05 | [Output / Reporting](./Pentest/nmap/05-output-reporting/) | `-oN`, `-oA` |
+| 06 | [Safe NSE](./Pentest/nmap/06-safe-nse/) | `--script safe` |
 
 ---
 
@@ -48,4 +52,4 @@ High-level plan for the repo and video series. One main goal per lab/video; play
 
 - One video = one main skill; playlists don’t mix (hardening vs recon vs attack).
 - Each new block = folder + lab markdown doc (`LABxx.md`/`Labxx-*.md`) + scripts + (optional) `commands.md`.
-- Every lab has a “defensive takeaway” where it makes sense (blue-team angle).
+- Every lab has a **defensive takeaway** where it makes sense (blue-team / purple angle).

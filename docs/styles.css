@@ -431,24 +431,33 @@ body {
     display: inline-block;
 }
 
-/* Playlist tabs */
-.playlist-tabs {
+/* YouTube / playlist */
+.playlist-links {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
 }
-.playlist-tab {
-    padding: 0.5rem 1rem;
+
+.playlist-note {
     font-size: 0.9rem;
     color: var(--text-muted);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    cursor: default;
+    max-width: 52rem;
+    margin: 0;
+    line-height: 1.55;
 }
-.playlist-tab.active {
-    color: var(--cyan);
-    border-color: var(--cyan);
-    background: rgba(0, 212, 255, 0.08);
+
+.lab-repo-only {
+    border-color: rgba(0, 212, 255, 0.25);
+}
+
+.lab-note {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* TryHackMe - Hero link */

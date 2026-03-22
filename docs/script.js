@@ -41,7 +41,7 @@
 
     document.querySelectorAll('.lab-card, .video-card, .thm-path-card, .proof-card, .track-card').forEach(observeCard);
 
-    // Load videos from JSON (updated by GitHub Action from YouTube)
+    // Load videos from data/videos.json (commit to repo when you publish a lab video)
     const videoGrid = document.getElementById('video-grid');
     const filtersWrap = document.getElementById('video-filters');
     const videoCount = document.getElementById('video-count');
@@ -55,21 +55,27 @@
 
                 function render(track) {
                     videoGrid.innerHTML = '';
-                    videos
-                        .filter(function (v) {
-                            if (track === 'all') return true;
-                            return (v.track || 'linux') === track;
-                        })
-                        .forEach(function (v) {
-                            var card = document.createElement('div');
-                            card.className = 'video-card';
-                            card.innerHTML =
-                                '<div class="video-wrapper">' +
-                                '<iframe loading="lazy" src="https://www.youtube.com/embed/' + v.id + '" title="' + escapeHtml(v.title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
-                                '</div><p>' + escapeHtml(v.title) + '</p>';
-                            videoGrid.appendChild(card);
-                            observeCard(card);
-                        });
+                    var list = videos.filter(function (v) {
+                        if (track === 'all') return true;
+                        return (v.track || 'linux') === track;
+                    });
+                    if (list.length === 0) {
+                        var empty = document.createElement('p');
+                        empty.className = 'section-desc';
+                        empty.innerHTML = 'No videos for this filter yet. Add entries with <code>track: &quot;' + escapeHtml(track) + '&quot;</code> in <code>data/videos.json</code>.';
+                        videoGrid.appendChild(empty);
+                        return;
+                    }
+                    list.forEach(function (v) {
+                        var card = document.createElement('div');
+                        card.className = 'video-card';
+                        card.innerHTML =
+                            '<div class="video-wrapper">' +
+                            '<iframe loading="lazy" src="https://www.youtube.com/embed/' + v.id + '" title="' + escapeHtml(v.title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+                            '</div><p>' + escapeHtml(v.title) + '</p>';
+                        videoGrid.appendChild(card);
+                        observeCard(card);
+                    });
                 }
 
                 render('all');

@@ -67,6 +67,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | [`docs/`](./docs/) | Portfolio site (GitHub Pages) |
 | [`scripts/`](./scripts/) | Shared automation helpers |
 | [`ROADMAP.md`](./ROADMAP.md) | High-level timeline and next steps |
+| [`LICENSE`](./LICENSE) | MIT — code and docs in this repo |
 
 ---
 
