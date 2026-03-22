@@ -42,20 +42,18 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 
 ## 📺 Video index
 
-Written labs and scripts live in-repo; **YouTube** links are added when each video is public (and synced to [`docs/data/videos.json`](./docs/data/videos.json)).
+Where a lab has a walkthrough, the link is below. **Shared / orchestration scripts** (e.g. Lab 06 master runbook) stay **GitHub-only** — documented here, not as a separate video.
 
 ### Linux Hardening
 
-| # | Lab | Video |
+| # | Lab | Video / materials |
 |:--|:----|:------|
 | 01 | Firewall (UFW) | [▶️ Watch](https://youtu.be/zgGrlMZAEcM) |
 | 02 | SSH Keys | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc) |
 | 03 | Security Banners | [▶️ Watch](https://youtu.be/ILBxHbIw74Y) |
 | 04 | SSH Agent Forwarding | [▶️ Watch](https://youtu.be/NOCivaFgoXc) |
 | 05 | Fail2Ban | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6) |
-| 06 | Final Automation | [📄 Lab + script](./Linux-Hardening/Lab06-Final-Automation/) · **▶️ YouTube — coming soon** |
-
-When the video is public: set the last column to `[▶️ Watch](https://youtu.be/<VIDEO_ID>)` and add the entry to [`docs/data/videos.json`](./docs/data/videos.json).
+| 06 | Final Automation | [Docs + `auto-secure.sh`](./Linux-Hardening/Lab06-Final-Automation/) |
 
 ---
 
@@ -81,13 +79,13 @@ When the video is public: set the last column to `[▶️ Watch](https://youtu.b
 
 ---
 
-## 🚀 Publish workflow (every new video)
+## 🚀 Publish workflow (when you release a lab video)
 
 1. Upload the video (public or scheduled).  
 2. Update the lab markdown in its folder.  
-3. Update this **`README.md`** (video table) if needed.  
+3. Update this **`README.md`** (video table) if that lab gets a watch link.  
 4. Update **`docs/index.html`** lab cards / links.  
-5. Update **`docs/data/videos.json`** (title + YouTube id).  
+5. If the lab should appear on the site video list, add it to **`docs/data/videos.json`**.  
 6. Keep naming consistent across GitHub, site, and playlists.
 
 ---

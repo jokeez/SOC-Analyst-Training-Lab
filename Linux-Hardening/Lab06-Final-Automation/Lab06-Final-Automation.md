@@ -44,14 +44,15 @@ sudo sshd -t && systemctl status ssh --no-pager
 
 From another machine: `ssh -p 2222 user@server-ip`
 
-## LinkedIn — how to post (EN)
+## LinkedIn — optional post (EN)
 
-1. **Publish the video** on YouTube (public or scheduled).
-2. Update the **main README** video table with the YouTube link when the video goes live.
-3. **LinkedIn post** (short, portfolio tone):
-   - **Hook:** 1 line + what you built.
-   - **Proof:** repo link + 1 screenshot (terminal or `ufw`/`fail2ban` status).
-   - **Takeaway:** “SSH on non-default port + UFW + Fail2Ban + key-only auth.”
-   - **Hashtags:** `#CyberSecurity #BlueTeam #Linux #SOC #SSH #Fail2Ban`
-4. Optional: **pin** the post to your profile for 1–2 weeks after a big series drop.
+This lab is **repo-first** (orchestration script, no separate walkthrough video). Share the **GitHub** link and what the script chains.
+
+**Post idea (short):**
+- **Hook:** one line — automated Linux hardening flow in one script.
+- **Proof:** link to this repo / folder + one screenshot (`ufw` or `fail2ban-client status`).
+- **Takeaway:** non-default SSH port + UFW + Fail2Ban + key-only auth, applied in a safe order.
+- **Hashtags:** `#CyberSecurity #BlueTeam #Linux #SOC #SSH #Fail2Ban`
+
+Optional: pin for a week after you announce the Linux series wrap-up.
 
