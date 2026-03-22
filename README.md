@@ -100,6 +100,20 @@ cd SOC-Analyst-Training-Lab
 
 Then open the specific lab folder and follow its markdown guide.
 
+### Linux Hardening — master script (final runbook)
+
+After you understand each lab, you can apply **01 + 02 + 03 + 05** in one safe order (SSH **2222**, UFW, Fail2Ban stay consistent):
+
+```bash
+cd Linux-Hardening/Lab06-Final-Automation
+chmod +x auto-secure.sh
+./auto-secure.sh
+```
+
+- **Details & validation:** [`Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md`](./Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md)  
+- **Order:** Lab02 (keys) → Lab03 (port/banner) → Lab01 (UFW) → Lab05 (Fail2Ban). Lab04 is **client-side** only.  
+- **Before:** put your public key in `~/.ssh/authorized_keys` and test SSH; keep a spare session open.
+
 ---
 
 ## 🌐 Portfolio & Profiles

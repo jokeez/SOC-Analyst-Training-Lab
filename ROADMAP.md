@@ -13,7 +13,7 @@ High-level plan for the repo and video series. One main goal per lab/video; play
 | 03 | Security Banners | MOTD, legal |
 | 04 | SSH Agent Forwarding | Jump servers, bastion |
 | 05 | Fail2Ban | SSH jail, brute-force mitigation |
-| 06 | Final Automation | Unified hardening workflow |
+| 06 | Final Automation | Unified hardening workflow (`Lab06-Final-Automation/auto-secure.sh`) |
 
 ---
 
