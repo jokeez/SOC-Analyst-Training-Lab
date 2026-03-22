@@ -55,5 +55,3 @@ From another machine: `ssh -p 2222 user@server-ip`
    - **Hashtags:** `#CyberSecurity #BlueTeam #Linux #SOC #SSH #Fail2Ban`
 4. Optional: **pin** the post to your profile for 1–2 weeks after a big series drop.
 
-**RU черновик (можно перевести в EN):**  
-«Завершил серию Linux Hardening: один скрипт собирает UFW, SSH (ключи, порт 2222), баннеры и Fail2Ban. Код и шаги — в GitHub. Следующий фокус — Nmap.»
