@@ -1,6 +1,6 @@
 # 🛡️ SOC Analyst Training Lab
 
-**MiroslavSec** — hands-on cybersecurity portfolio focused on SOC/Blue Team growth.
+**MiroslavSec** — hands-on cybersecurity portfolio focused on SOC / Blue Team growth.
 
 [![GitHub Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
 [![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
@@ -11,98 +11,99 @@
 ## 🎯 Objective
 
 Build practical evidence of security skills through:
-- Linux hardening labs
-- Recon and pentest tool series
-- TryHackMe daily practice
-- Public documentation and videos
 
-This repository is portfolio-first: every block should show **what was done**, **how it was validated**, and **what defensive takeaway was learned**.
+- Linux hardening labs  
+- Recon and pentest tool series  
+- TryHackMe daily practice  
+- Public documentation and videos  
+
+This repository is **portfolio-first**: every block shows **what was done**, **how it was validated**, and **what defensive takeaway was learned**.
 
 ---
 
-## 📊 Tracks Overview
+## 📊 Tracks overview
 
 | Track | Scope | Status |
 |:------|:------|:------:|
-| **Linux Hardening** | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation | ✅ Completed (01–06) |
-| **Nmap** | Discovery, Port Scan, NSE scripts | 🚧 In progress |
+| **Linux Hardening** | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation | ✅ **01–06** (docs + scripts) |
+| **Nmap** | Six labs: discovery → SYN scan → services → speed vs depth → output → safe NSE | 🚧 In progress |
 | **Hydra** | SSH, HTTP, FTP workflows | ⏳ Planned |
-| **SOC Expansion** | Windows/AD, logging, SIEM, incident mini-cases | ⏳ Planned |
+| **SOC expansion** | Windows/AD, logging, SIEM, incident mini-cases | ⏳ Planned |
 
 ---
 
-## 🔥 Current Focus
+## 🔥 Current focus
 
-- Daily: TryHackMe learning and notes
-- Weekly: batch recording and scheduled publishing
-- Rule: one tool per series (no mixing tools in one video block)
+- Daily: TryHackMe learning and notes  
+- Weekly: batch recording and scheduled publishing  
+- Rule: **one tool per series** (no mixing tools in one video block)
 
 ---
 
-## 📺 Video Index
+## 📺 Video index
 
-### Linux Hardening (Completed)
+Written labs and scripts live in-repo; **YouTube** links are added when each video is public (and synced to [`docs/data/videos.json`](./docs/data/videos.json)).
+
+### Linux Hardening
+
 | # | Lab | Video |
 |:--|:----|:------|
-| 01 | Firewall (UFW) | [▶️](https://youtu.be/zgGrlMZAEcM) |
-| 02 | SSH Keys | [▶️](https://youtu.be/ULZVP8h6Uvc) |
-| 03 | Security Banners | [▶️](https://youtu.be/ILBxHbIw74Y) |
-| 04 | SSH Agent Forwarding | [▶️](https://youtu.be/NOCivaFgoXc) |
-| 05 | Fail2Ban | [▶️](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6) |
-| 06 | Final Automation | 🎬 Recorded (publishing soon) |
+| 01 | Firewall (UFW) | [▶️ Watch](https://youtu.be/zgGrlMZAEcM) |
+| 02 | SSH Keys | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc) |
+| 03 | Security Banners | [▶️ Watch](https://youtu.be/ILBxHbIw74Y) |
+| 04 | SSH Agent Forwarding | [▶️ Watch](https://youtu.be/NOCivaFgoXc) |
+| 05 | Fail2Ban | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6) |
+| 06 | Final Automation | [📄 Lab + script](./Linux-Hardening/Lab06-Final-Automation/) · **▶️ YouTube — coming soon** |
+
+When the video is public: set the last column to `[▶️ Watch](https://youtu.be/<VIDEO_ID>)` and add the entry to [`docs/data/videos.json`](./docs/data/videos.json).
 
 ---
 
-## 📁 Repository Structure
+## 📁 Repository structure
 
 | Path | Purpose |
 |:-----|:--------|
-| [`Linux-Hardening/`](./Linux-Hardening/) | SOC lab series (01–06) |
-| [`Pentest/nmap/`](./Pentest/nmap/) | Nmap-only series |
-| [`Pentest/hydra/`](./Pentest/hydra/) | Hydra-only series |
-| [`docs/`](./docs/) | Portfolio website (GitHub Pages) |
-| [`scripts/`](./scripts/) | Automation helpers |
+| [`Linux-Hardening/`](./Linux-Hardening/) | Linux series (labs 01–06) |
+| [`Pentest/nmap/`](./Pentest/nmap/) | Nmap-only series (six sections + scripts) |
+| [`Pentest/hydra/`](./Pentest/hydra/) | Hydra-only series (planned) |
+| [`docs/`](./docs/) | Portfolio site (GitHub Pages) |
+| [`scripts/`](./scripts/) | Shared automation helpers |
+| [`ROADMAP.md`](./ROADMAP.md) | High-level timeline and next steps |
 
 ---
 
-## ✅ Content Standards
+## ✅ Content standards
 
-- One video = one main skill.
-- One series = one tool (no tool mixing).
-- Lab docs use named markdown files (`LABxx.md` or `Labxx-*.md`), not per-folder README by default.
-- Each lab includes:
-  - objective
-  - run steps
-  - validation
-  - defensive takeaway
+- One video = one main skill.  
+- One series = one tool (no tool mixing).  
+- Lab docs use named markdown files (`LABxx.md` or `Labxx-*.md`).  
+- Each lab includes: objective → steps → validation → **defensive takeaway** (purple angle where it fits).
 
 ---
 
-## 🚀 Publish Workflow (Every New Video)
+## 🚀 Publish workflow (every new video)
 
-1. Record and upload video (public or scheduled).
-2. Update lab markdown file in its folder.
-3. Update `README.md` track status and video table (if needed).
-4. Update `docs/index.html` lab card status/links.
-5. Update `docs/data/videos.json` with new YouTube video id/title.
-6. Keep naming/style consistent (no tool mixing between series).
-
-This keeps GitHub + website + video index always synchronized.
+1. Upload the video (public or scheduled).  
+2. Update the lab markdown in its folder.  
+3. Update this **`README.md`** (video table) if needed.  
+4. Update **`docs/index.html`** lab cards / links.  
+5. Update **`docs/data/videos.json`** (title + YouTube id).  
+6. Keep naming consistent across GitHub, site, and playlists.
 
 ---
 
-## ⚙️ Quick Start
+## ⚙️ Quick start
 
 ```bash
 git clone https://github.com/jokeez/SOC-Analyst-Training-Lab.git
 cd SOC-Analyst-Training-Lab
 ```
 
-Then open the specific lab folder and follow its markdown guide.
+Open the lab folder you need and follow its markdown guide.
 
 ### Linux Hardening — master script (final runbook)
 
-After you understand each lab, you can apply **01 + 02 + 03 + 05** in one safe order (SSH **2222**, UFW, Fail2Ban stay consistent):
+After you understand each step, you can chain **labs 02 + 03 + 01 + 05** in one safe order (SSH **2222**, UFW, Fail2Ban stay aligned):
 
 ```bash
 cd Linux-Hardening/Lab06-Final-Automation
@@ -110,16 +111,16 @@ chmod +x auto-secure.sh
 ./auto-secure.sh
 ```
 
-- **Details & validation:** [`Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md`](./Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md)  
-- **Order:** Lab02 (keys) → Lab03 (port/banner) → Lab01 (UFW) → Lab05 (Fail2Ban). Lab04 is **client-side** only.  
-- **Before:** put your public key in `~/.ssh/authorized_keys` and test SSH; keep a spare session open.
+- **Write-up:** [`Lab06-Final-Automation.md`](./Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md)  
+- **Order:** Lab 02 (keys) → Lab 03 (port/banner) → Lab 01 (UFW) → Lab 05 (Fail2Ban). Lab 04 is **client-side** only.  
+- **Before:** your public key in `~/.ssh/authorized_keys` and a tested SSH login; keep a spare session open.
 
 ---
 
-## 🌐 Portfolio & Profiles
+## 🌐 Portfolio & profiles
 
-- Website: [MiroslavSec](https://jokeez.github.io/SOC-Analyst-Training-Lab/)
-- Certification Museum: [Certifications](https://jokeez.github.io/SOC-Analyst-Training-Lab/certifications.html)
-- TryHackMe: [MiroslavSEC](https://tryhackme.com/p/MiroslavSEC)
-- YouTube: [MiroslavSec1](https://www.youtube.com/@MiroslavSec1)
-- LinkedIn: [miroslav-u-7152233b5](https://www.linkedin.com/in/miroslav-u-7152233b5/)
+- **Website:** [MiroslavSec](https://jokeez.github.io/SOC-Analyst-Training-Lab/)  
+- **Certification museum:** [Certifications](https://jokeez.github.io/SOC-Analyst-Training-Lab/certifications.html)  
+- **TryHackMe:** [MiroslavSEC](https://tryhackme.com/p/MiroslavSEC)  
+- **YouTube:** [MiroslavSec1](https://www.youtube.com/@MiroslavSec1)  
+- **LinkedIn:** [miroslav-u-7152233b5](https://www.linkedin.com/in/miroslav-u-7152233b5/)
