@@ -121,6 +121,21 @@
     gap: 0.5rem;
 }
 
+.museum-image-wrap {
+    margin: 0.75rem 0 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.museum-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .museum-issuer {
     font-size: 0.77rem;
     letter-spacing: 0.08em;
@@ -241,6 +256,16 @@
     border-radius: 14px;
     padding: 1.3rem;
     width: calc(100% - 2rem);
+}
+
+.cert-modal-image {
+    display: block;
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    margin: 0.2rem 0 0.9rem;
 }
 
 .cert-modal-close {

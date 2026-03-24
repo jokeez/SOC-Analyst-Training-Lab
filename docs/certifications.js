@@ -9,6 +9,7 @@
     var modalDate = document.getElementById('cert-modal-date');
     var modalDesc = document.getElementById('cert-modal-desc');
     var modalCredential = document.getElementById('cert-modal-credential');
+    var modalImage = document.getElementById('cert-modal-image');
 
     if (!grid) return;
 
@@ -53,6 +54,7 @@
                         '<span class="museum-issuer">' + escapeHtml(c.issuer || 'Issuer') + '</span>' +
                         '<span class="museum-status ' + escapeHtml(status) + '">' + escapeHtml(statusLabel(status)) + '</span>' +
                     '</div>' +
+                    (c.image ? '<div class="museum-image-wrap"><img class="museum-image" src="' + escapeHtml(c.image) + '" alt="' + escapeHtml((c.title || 'Certificate') + ' preview') + '" loading="lazy"></div>' : '') +
                     '<h3 class="museum-title">' + escapeHtml(c.title || 'Untitled') + '</h3>' +
                     '<p class="museum-date">' + escapeHtml(c.date || 'TBD') + '</p>' +
                     '<p class="museum-desc">' + escapeHtml(c.description || '') + '</p>' +
@@ -107,6 +109,17 @@
 
     function openModal(cert) {
         if (!modal) return;
+        if (modalImage) {
+            if (cert.image) {
+                modalImage.src = cert.image;
+                modalImage.alt = (cert.title || 'Certificate') + ' preview';
+                modalImage.hidden = false;
+            } else {
+                modalImage.hidden = true;
+                modalImage.src = '';
+                modalImage.alt = 'Certificate preview';
+            }
+        }
         modalIssuer.textContent = cert.issuer || '';
         modalTitle.textContent = cert.title || '';
         modalDate.textContent = cert.date || '';

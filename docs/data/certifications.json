@@ -4,6 +4,7 @@
     "issuer": "TryHackMe",
     "date": "5 March 2026",
     "status": "earned",
+    "image": "assets/certifications/thm-pre-security-2026-03-05.png",
     "credential_url": "https://tryhackme.com/path/outline/presecurity",
     "description": "Completed learning path covering cybersecurity foundations: networking basics, Linux/Windows fundamentals, and security concepts. Course duration: 19 hours 10 minutes."
   },
