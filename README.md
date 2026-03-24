@@ -55,6 +55,15 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 05 | Fail2Ban | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6) |
 | 06 | Final Automation | [Docs + `auto-secure.sh`](./Linux-Hardening/Lab06-Final-Automation/) |
 
+### Nmap (published)
+
+| # | Lab | Video |
+|:--|:----|:------|
+| 01 | Host Discovery + Fast Scan | [▶️ Watch](https://youtu.be/abxydAApkko) |
+| 02 | SYN Scan Basics | [▶️ Watch](https://youtu.be/vPJW-t86lgc) |
+| 03 | Service Detection | [▶️ Watch](https://youtu.be/vn8LKGCSVQk) |
+| 04 | Speed vs Depth | [▶️ Watch](https://youtu.be/uDrDLcGPx1A) |
+
 ---
 
 ## 📁 Repository structure

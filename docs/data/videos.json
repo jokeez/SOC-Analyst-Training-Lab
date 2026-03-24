@@ -23,5 +23,25 @@
     "id": "KGf3O-4LXkQ",
     "title": "Lab 05: Fail2Ban Setup",
     "track": "linux"
+  },
+  {
+    "id": "abxydAApkko",
+    "title": "Nmap Lab 01: Host Discovery + Fast Scan",
+    "track": "nmap"
+  },
+  {
+    "id": "vPJW-t86lgc",
+    "title": "Nmap Lab 02: SYN Scan Basics",
+    "track": "nmap"
+  },
+  {
+    "id": "vn8LKGCSVQk",
+    "title": "Nmap Lab 03: Service Detection",
+    "track": "nmap"
+  },
+  {
+    "id": "uDrDLcGPx1A",
+    "title": "Nmap Lab 04: Speed vs Depth",
+    "track": "nmap"
   }
 ]
