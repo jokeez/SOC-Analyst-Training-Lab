@@ -13,7 +13,7 @@
 Build practical evidence of security skills through:
 
 - Linux hardening labs  
-- Recon and pentest tool series  
+- Offensive and defensive tool series  
 - TryHackMe daily practice  
 - Public documentation and videos  
 
@@ -26,8 +26,8 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Track | Scope | Status |
 |:------|:------|:------:|
 | **Linux Hardening** | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation | ✅ **01–06** (docs + scripts) |
-| **Nmap** | Six labs: discovery → SYN scan → services → speed vs depth → output → safe NSE | 🚧 In progress |
-| **Hydra** | SSH, HTTP, FTP workflows | ⏳ Planned |
+| **Red Team (Offensive)** | Nmap, Hydra, and future attack-surface tooling | 🚧 In progress |
+| **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases | 🧱 Building |
 | **SOC expansion** | Windows/AD, logging, SIEM, incident mini-cases | ⏳ Planned |
 
 ---
@@ -66,13 +66,48 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 
 ---
 
+## 🟣 Purple Engine
+
+This portfolio follows a **Purple Team workflow**:
+
+- **Red (offensive):** discover and simulate realistic attack techniques.
+- **Blue (defensive):** detect, harden, and validate mitigations.
+- **Purple (bridge):** connect attack evidence to concrete defensive actions.
+
+### Traceability Matrix (Attack → Defense)
+
+| Attack phase (Red) | Tool / technique | Detection / mitigation (Blue) | Lab evidence |
+|:-------------------|:-----------------|:------------------------------|:------------|
+| Network recon | `nmap -sn`, `nmap -sV` | Service minimization, banner strategy, segmentation | [Nmap Lab 01–03](./labs/offensive-red/nmap/) |
+| Port exposure mapping | SYN scan (`-sS -Pn`) | Firewall rule review + exposure baseline | [Nmap Lab 02](./labs/offensive-red/nmap/02-syn-scan/) |
+| Brute-force simulation | Hydra (planned) | Fail2Ban + SSH keys + hardening policy | [Linux Lab 05](./Linux-Hardening/Lab05-Fail2Ban/) |
+| Safe service enumeration | NSE `--script safe` | Logging + anomalous pattern monitoring | [Nmap Lab 06](./labs/offensive-red/nmap/06-safe-nse/) |
+| SSH hardening validation | Key-only auth / custom port checks | `sshd_config` policy + UFW + backup-and-verify flow | [Linux Lab 02/03/06](./Linux-Hardening/) |
+
+### Lab Standard
+
+Every lab should follow the same engineering format:
+
+1. **Scenario** — what problem is being solved?
+2. **Scope & authorization** — lab-only and authorized targets.
+3. **Reproduction (Red)** — how the issue is observed.
+4. **Remediation (Blue)** — fix/hardening steps.
+5. **Verification** — proof that behavior changed after fixes.
+6. **Artifacts** — scripts, command logs, or reports.
+7. **Defensive takeaway** — SOC-relevant conclusion.
+
+Template: [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md)
+
+---
+
 ## 📁 Repository structure
 
 | Path | Purpose |
 |:-----|:--------|
 | [`Linux-Hardening/`](./Linux-Hardening/) | Linux series (labs 01–06) |
-| [`Pentest/nmap/`](./Pentest/nmap/) | Nmap-only series (six sections + scripts) |
-| [`Pentest/hydra/`](./Pentest/hydra/) | Hydra-only series (planned) |
+| [`labs/offensive-red/`](./labs/offensive-red/) | Red Team tools and workflows (Nmap/Hydra/...) |
+| [`labs/defensive-blue/`](./labs/defensive-blue/) | Blue Team detections, mitigations, and case notes |
+| [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md) | Standard template for consistent lab quality |
 | [`docs/`](./docs/) | Portfolio site (GitHub Pages) |
 | [`scripts/`](./scripts/) | Shared automation helpers |
 | [`ROADMAP.md`](./ROADMAP.md) | High-level timeline and next steps |

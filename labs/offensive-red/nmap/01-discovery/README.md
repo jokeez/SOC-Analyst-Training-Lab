@@ -66,4 +66,4 @@ sudo nmap -sn -PE <TARGET_OR_RANGE>
 
 ## Source
 
-Portfolio: [SOC-Analyst-Training-Lab](https://github.com/jokeez/SOC-Analyst-Training-Lab) — `Pentest/nmap/01-discovery/`.
+Portfolio: [SOC-Analyst-Training-Lab](https://github.com/jokeez/SOC-Analyst-Training-Lab) — `labs/offensive-red/nmap/01-discovery/`.
