@@ -124,14 +124,11 @@ Template: [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md)
 
 ---
 
-## 🚀 Publish workflow (when you release a lab video)
+## 🚀 Release workflow
 
-1. Upload the video (public or scheduled).  
-2. Update the lab markdown in its folder.  
-3. Update this **`README.md`** (video table) if that lab gets a watch link.  
-4. Update **`docs/index.html`** lab cards / links.  
-5. If the lab should appear on the site video list, add it to **`docs/data/videos.json`**.  
-6. Keep naming consistent across GitHub, site, and playlists.
+1. Publish or schedule the lab video.  
+2. Sync documentation and public links in repository and website.  
+3. Keep titles and naming consistent across GitHub, website, and playlist.
 
 ---
 
