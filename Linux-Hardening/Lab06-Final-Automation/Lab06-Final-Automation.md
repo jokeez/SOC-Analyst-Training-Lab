@@ -44,15 +44,4 @@ sudo sshd -t && systemctl status ssh --no-pager
 
 From another machine: `ssh -p 2222 user@server-ip`
 
-## LinkedIn — optional post (EN)
-
-This lab is **repo-first** (orchestration script, no separate walkthrough video). Share the **GitHub** link and what the script chains.
-
-**Post idea (short):**
-- **Hook:** one line — automated Linux hardening flow in one script.
-- **Proof:** link to this repo / folder + one screenshot (`ufw` or `fail2ban-client status`).
-- **Takeaway:** non-default SSH port + UFW + Fail2Ban + key-only auth, applied in a safe order.
-- **Hashtags:** `#CyberSecurity #BlueTeam #Linux #SOC #SSH #Fail2Ban`
-
-Optional: pin for a week after you announce the Linux series wrap-up.
 
