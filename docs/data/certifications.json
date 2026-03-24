@@ -11,9 +11,10 @@
   {
     "title": "Cyber Security 101",
     "issuer": "TryHackMe",
-    "date": "Planned",
-    "status": "planned",
+    "date": "24 March 2026",
+    "status": "earned",
+    "image": "assets/certifications/thm-cyber-security-101-2026-03-24.png",
     "credential_url": "https://tryhackme.com/path/outline/cybersecurity101",
-    "description": "Next milestone focused on practical entry-level cyber operations and defensive mindset."
+    "description": "Completed practical entry-level cyber operations path with a defensive mindset. Course duration: 45 hours 23 minutes."
   }
 ]
