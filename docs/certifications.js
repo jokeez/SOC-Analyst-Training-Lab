@@ -10,6 +10,7 @@
     var modalDesc = document.getElementById('cert-modal-desc');
     var modalCredential = document.getElementById('cert-modal-credential');
     var modalImage = document.getElementById('cert-modal-image');
+    var modalImageLink = document.getElementById('cert-modal-image-link');
 
     if (!grid) return;
 
@@ -114,10 +115,18 @@
                 modalImage.src = cert.image;
                 modalImage.alt = (cert.title || 'Certificate') + ' preview';
                 modalImage.hidden = false;
+                if (modalImageLink) {
+                    modalImageLink.href = cert.image;
+                    modalImageLink.hidden = false;
+                }
             } else {
                 modalImage.hidden = true;
                 modalImage.src = '';
                 modalImage.alt = 'Certificate preview';
+                if (modalImageLink) {
+                    modalImageLink.hidden = true;
+                    modalImageLink.href = '#';
+                }
             }
         }
         modalIssuer.textContent = cert.issuer || '';

@@ -95,6 +95,7 @@ Every lab should follow the same engineering format:
 5. **Verification** — proof that behavior changed after fixes.
 6. **Artifacts** — scripts, command logs, or reports.
 7. **Defensive takeaway** — SOC-relevant conclusion.
+8. **MITRE ATT&CK mapping** — 1-3 techniques with detection + mitigation notes.
 
 Template: [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md)
 
