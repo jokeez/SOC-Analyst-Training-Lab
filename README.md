@@ -63,6 +63,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 02 | SYN Scan Basics | [▶️ Watch](https://youtu.be/vPJW-t86lgc) |
 | 03 | Service Detection | [▶️ Watch](https://youtu.be/vn8LKGCSVQk) |
 | 04 | Speed vs Depth | [▶️ Watch](https://youtu.be/uDrDLcGPx1A) |
+| 05 | Output & Reporting | [▶️ Watch](https://youtu.be/Jk_YhxfHPCw) |
 
 ---
 
