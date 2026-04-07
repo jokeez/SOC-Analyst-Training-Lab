@@ -19,7 +19,7 @@ Focused Nmap learning track with short labs and clear blue-team takeaways.
 | 05 | [Output and Reporting](./05-output-reporting/) | `-oN`, `-oA`, baseline snapshots | ✅ |
 | 06 | [Safe NSE Intro](./06-safe-nse/) | `--script safe` basics | ✅ |
 
-**Walkthrough (Lab 06):** [▶️ Watch on YouTube](https://youtu.be/wZI1miGav1w) — full Nmap track index is in the [repository root `README.md`](../../README.md#-video-index).
+**Walkthrough (Lab 06):** [▶️ Watch on YouTube](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL) — full Nmap track index is in the [repository root `README.md`](../../README.md#-video-index).
 
 ## Shared Files
 

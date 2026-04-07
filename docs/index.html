@@ -121,7 +121,7 @@
                     <a href="https://www.youtube.com/@MiroslavSec1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">@MiroslavSec1 — Channel</a>
                     <a href="https://www.youtube.com/@MiroslavSec1/videos" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">All videos</a>
                 </div>
-                <p class="playlist-note">Linux hardening: Labs <strong>01–05</strong> on video; Lab <strong>06</strong> (master script) is documented on GitHub only. Nmap / Hydra: follow the channel as labs go live.</p>
+                <p class="playlist-note">Linux hardening: Labs <strong>01–05</strong> on video; Lab <strong>06</strong> (master script) is documented on GitHub only. <strong>Nmap</strong> Labs <strong>01–06</strong> on video. <strong>Hydra</strong> Lab <strong>00</strong> on video; more Hydra labs follow on the channel.</p>
             </div>
         </section>
 
@@ -135,15 +135,15 @@
                         <p>UFW, SSH hardening, banners, forwarding, Fail2Ban, automation.</p>
                         <span class="badge">Completed</span>
                     </article>
-                    <article class="track-card progress">
+                    <article class="track-card done">
                         <h3>Nmap</h3>
-                        <p>Six labs: discovery → SYN scan → services → speed vs depth → output → safe NSE. Docs in repo; videos added over time.</p>
-                        <span class="badge">In Progress</span>
+                        <p>Six labs: discovery → SYN scan → services → speed vs depth → output → safe NSE. Walkthroughs on YouTube; scripts in repo.</p>
+                        <span class="badge">Track complete (video)</span>
                     </article>
-                    <article class="track-card planned">
+                    <article class="track-card progress">
                         <h3>Hydra</h3>
-                        <p>Dedicated Hydra-only path: SSH, HTTP forms, FTP.</p>
-                        <span class="badge">Planned</span>
+                        <p>Lab 00 (web range + rate limit) published; SSH, HTTP forms, FTP labs next.</p>
+                        <span class="badge">In Progress</span>
                     </article>
                     <article class="track-card planned">
                         <h3>SOC Expansion</h3>
@@ -272,12 +272,32 @@
                         </div>
                         <span class="badge">Published</span>
                     </article>
+                    <article class="lab-card lab-pentest">
+                        <span class="lab-number">Nmap</span>
+                        <h3>06 Safe NSE Intro</h3>
+                        <p><code>--script safe</code> controlled enumeration</p>
+                        <div class="lab-links">
+                            <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/nmap/06-safe-nse" class="link-doc" target="_blank" rel="noopener noreferrer">Docs</a>
+                            <a href="https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL" target="_blank" rel="noopener noreferrer" class="link-video">Watch</a>
+                        </div>
+                        <span class="badge">Published</span>
+                    </article>
+                    <article class="lab-card lab-pentest">
+                        <span class="lab-number">Hydra</span>
+                        <h3>00 Speed vs detection</h3>
+                        <p>Local Flask range, rate limit &amp; lockout toggles</p>
+                        <div class="lab-links">
+                            <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/hydra/00-speed-vs-detection" class="link-doc" target="_blank" rel="noopener noreferrer">Docs</a>
+                            <a href="https://youtu.be/H16hmZXzrYA" target="_blank" rel="noopener noreferrer" class="link-video">Watch</a>
+                        </div>
+                        <span class="badge">Published</span>
+                    </article>
                     <article class="lab-card lab-planned lab-pentest">
                         <span class="lab-number">Hydra</span>
                         <h3>SSH · HTTP · FTP</h3>
-                        <p>Brute-force tool</p>
+                        <p>Next labs in the Hydra track</p>
                         <div class="lab-links">
-                            <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/hydra" class="link-doc" target="_blank" rel="noopener noreferrer">Docs</a>
+                            <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/hydra" class="link-doc" target="_blank" rel="noopener noreferrer">Track</a>
                         </div>
                         <span class="badge">Soon</span>
                     </article>
@@ -288,7 +308,7 @@
         <section id="videos" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Hands-On Videos</h2>
-                <p class="section-desc">Embedded from <code>data/videos.json</code> (Linux, Nmap, Hydra tracks). Lab 06 is not listed — documentation-only.</p>
+                <p class="section-desc">Embedded from <code>data/videos.json</code> (Linux, Nmap, Hydra tracks). Linux Lab 06 (Final Automation) has no walkthrough video — GitHub only.</p>
                 <div class="video-filters" id="video-filters">
                     <button class="video-filter active" type="button" data-track="all">All</button>
                     <button class="video-filter" type="button" data-track="linux">Linux</button>

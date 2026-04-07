@@ -48,5 +48,15 @@
     "id": "Jk_YhxfHPCw",
     "title": "Nmap Lab 05: Output & Reporting",
     "track": "nmap"
+  },
+  {
+    "id": "wZI1miGav1w",
+    "title": "Nmap Lab 06: Safe NSE Intro",
+    "track": "nmap"
+  },
+  {
+    "id": "H16hmZXzrYA",
+    "title": "Hydra Lab 00: Speed vs Rate Limiting (Custom Range)",
+    "track": "hydra"
   }
 ]

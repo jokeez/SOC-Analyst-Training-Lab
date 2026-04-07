@@ -26,7 +26,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Track | Scope | Status |
 |:------|:------|:------:|
 | **Linux Hardening** | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation | ✅ **01–06** (docs + scripts) |
-| **Red Team (Offensive)** | Nmap, Hydra, and future attack-surface tooling | 🚧 In progress |
+| **Red Team (Offensive)** | Nmap (Labs 01–06 on video), Hydra (Lab 00 on video; more planned) | 🚧 In progress |
 | **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases | 🧱 Building |
 | **SOC expansion** | Windows/AD, logging, SIEM, incident mini-cases | ⏳ Planned |
 
@@ -42,7 +42,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 
 ## 📺 Video index
 
-Where a lab has a walkthrough, the link is below. **Shared / orchestration scripts** (e.g. Lab 06 master runbook) stay **GitHub-only** — documented here, not as a separate video.
+Where a lab has a walkthrough, the link is below. **Shared / orchestration scripts** (Linux Lab 06 `auto-secure.sh`, Nmap `nmap-labs-menu.sh`) stay **GitHub-only** — documented here, not as a separate video.
 
 ### Linux Hardening
 
@@ -57,13 +57,21 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 
 ### Nmap (published)
 
-| # | Lab | Video |
+| # | Lab | Video / materials |
 |:--|:----|:------|
 | 01 | Host Discovery + Fast Scan | [▶️ Watch](https://youtu.be/abxydAApkko) |
 | 02 | SYN Scan Basics | [▶️ Watch](https://youtu.be/vPJW-t86lgc) |
 | 03 | Service Detection | [▶️ Watch](https://youtu.be/vn8LKGCSVQk) |
 | 04 | Speed vs Depth | [▶️ Watch](https://youtu.be/uDrDLcGPx1A) |
 | 05 | Output & Reporting | [▶️ Watch](https://youtu.be/Jk_YhxfHPCw) |
+| 06 | Safe NSE Intro | [▶️ Watch](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL) |
+| — | Interactive menu (runs Labs 01–06) | [Docs + `nmap-labs-menu.sh`](./labs/offensive-red/nmap/scripts/) |
+
+### Hydra (published)
+
+| # | Lab | Video |
+|:--|:----|:------|
+| 00 | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA) |
 
 ---
 
@@ -81,7 +89,7 @@ This portfolio follows a **Purple Team workflow**:
 |:-------------------|:-----------------|:------------------------------|:------------|
 | Network recon | `nmap -sn`, `nmap -sV` | Service minimization, banner strategy, segmentation | [Nmap Lab 01–03](./labs/offensive-red/nmap/) |
 | Port exposure mapping | SYN scan (`-sS -Pn`) | Firewall rule review + exposure baseline | [Nmap Lab 02](./labs/offensive-red/nmap/02-syn-scan/) |
-| Brute-force simulation | Hydra (planned) | Fail2Ban + SSH keys + hardening policy | [Linux Lab 05](./Linux-Hardening/Lab05-Fail2Ban/) |
+| Brute-force simulation | Hydra (web lab + SSH track) | Fail2Ban + SSH keys + hardening policy | [Hydra Lab 00](./labs/offensive-red/hydra/00-speed-vs-detection/) · [Linux Lab 05](./Linux-Hardening/Lab05-Fail2Ban/) |
 | Safe service enumeration | NSE `--script safe` | Logging + anomalous pattern monitoring | [Nmap Lab 06](./labs/offensive-red/nmap/06-safe-nse/) |
 | SSH hardening validation | Key-only auth / custom port checks | `sshd_config` policy + UFW + backup-and-verify flow | [Linux Lab 02/03/06](./Linux-Hardening/) |
 
