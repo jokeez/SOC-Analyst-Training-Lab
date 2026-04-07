@@ -19,9 +19,22 @@ Focused Nmap learning track with short labs and clear blue-team takeaways.
 | 05 | [Output and Reporting](./05-output-reporting/) | `-oN`, `-oA`, baseline snapshots | ✅ |
 | 06 | [Safe NSE Intro](./06-safe-nse/) | `--script safe` basics | ✅ |
 
+**Walkthrough (Lab 06):** [▶️ Watch on YouTube](https://youtu.be/wZI1miGav1w) — full Nmap track index is in the [repository root `README.md`](../../README.md#-video-index).
+
 ## Shared Files
 
 - [commands.md](./commands.md) - quick flags cheat sheet.
 - [scripts/](./scripts/) - reusable Nmap scripts:
+  - **`nmap-labs-menu.sh`** — interactive menu that runs Labs **01–06** (calls each lab script in its folder; good entry point for beginners).
   - `nmap-scan.sh` (recon workflow)
   - `nmap-defend-check.sh` (defensive checks)
+
+### Quick start (menu)
+
+```bash
+cd labs/offensive-red/nmap/scripts
+chmod +x nmap-labs-menu.sh
+./nmap-labs-menu.sh
+```
+
+For learning, still read each lab’s `README.md` first; the menu is a convenience launcher, not a replacement for one-concept-per-lab practice.

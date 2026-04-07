@@ -1,5 +1,7 @@
 # Nmap 06: Safe NSE Intro
 
+**Video:** [Lab 06 — Safe NSE](https://youtu.be/wZI1miGav1w)
+
 ## Objective
 
 Use safe NSE scripts for controlled enumeration.
