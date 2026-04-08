@@ -1,15 +1,28 @@
-# Red Team Labs (Offensive)
+# 🔴 Red Team Labs (Offensive)
 
-Hands-on offensive labs focused on controlled reconnaissance and attack-surface validation.
+Hands-on offensive labs for controlled reconnaissance, service analysis, and safe attack-surface simulation.
 
-| Tool | Sections |
-|:-----|:---------|
-| [Nmap](./nmap/) | Discovery, scan techniques, output/reporting, safe NSE |
-| [Hydra](./hydra/) | SSH, HTTP, FTP workflows (planned) |
+## 🧭 Quick links
 
-Each tool folder should include:
-- `README.md` (scope + objective)
-- `commands.md` (flag cheat sheet)
-- scripts and artifacts for reproducible lab runs
+- [Nmap](./nmap/)
+- [Hydra](./hydra/)
+- [Back to Labs workspace](../README.md)
 
-Purple note: every offensive lab should map to a defensive takeaway in the main `README.md` traceability matrix.
+## 📦 Tool map
+
+
+| Tool              | Focus area                                                  | Current state                     |
+| ----------------- | ----------------------------------------------------------- | --------------------------------- |
+| [Nmap](./nmap/)   | Discovery, SYN scan, service detection, reporting, safe NSE | ✅ Published block (01-06)         |
+| [Hydra](./hydra/) | Brute-force simulation vs defensive controls                | 🚧 Lab 00 live, expansion planned |
+
+
+## 📌 Folder standard
+
+Each tool folder should contain:
+
+- `README.md` for scope and safety boundaries
+- `commands.md` for flags and quick command references
+- scripts/artifacts that allow reproducible execution
+
+Purple note: each offensive lab should map to at least one defensive control in the root traceability matrix.
