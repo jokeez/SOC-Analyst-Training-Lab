@@ -3,20 +3,22 @@
 **MiroslavSec** — practical cybersecurity portfolio for SOC / Blue Team growth with real lab evidence.
 **Developed independently by MiroslavSec. Not affiliated with any educational institution.**
 
+<p align="center">
+  <img src="./docs/assets/banner.png" alt="SOC Analyst Training Lab Banner" />
+</p>
 
+[![Status Active](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Focus Purple Team Workflow](https://img.shields.io/badge/Focus-Purple%20Team-7c3aed?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Content Labs + Videos](https://img.shields.io/badge/Content-Labs%20%2B%20Videos-2563eb?style=for-the-badge)](https://www.youtube.com/@MiroslavSec1)
 
-[Status Active](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Focus Purple Team Workflow](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Content Labs + Videos](https://www.youtube.com/@MiroslavSec1)
+[![Last Commit](https://img.shields.io/github/last-commit/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
+[![Repo Size](https://img.shields.io/github/repo-size/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Issues](https://img.shields.io/github/issues/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
+[![Stars](https://img.shields.io/github/stars/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
 
-[Last Commit](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
-[Repo Size](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Issues](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
-[Stars](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
-
-[GitHub Portfolio](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[LinkedIn Connect](https://www.linkedin.com/in/miroslav-u-7152233b5/)
-[YouTube Watch Labs](https://www.youtube.com/@MiroslavSec1)
+[![GitHub Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
+[![YouTube Watch Labs](https://img.shields.io/badge/YouTube-Watch%20Labs-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@MiroslavSec1)
 
 > Building public, repeatable SOC skills: attack simulation, defensive validation, and clear documentation.
 
