@@ -1,6 +1,7 @@
 # 🛡️ SOC Analyst Training Lab
 
 **MiroslavSec** — hands-on cybersecurity portfolio focused on SOC / Blue Team growth.
+**Developed independently by MiroslavSec. Not affiliated with any educational institution.
 
 [![GitHub Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
 [![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
