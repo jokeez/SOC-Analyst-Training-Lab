@@ -15,29 +15,33 @@ High-level plan for labs, videos, and portfolio evolution.
 
 ## ✅ Done — Infrastructure Hardening
 
-| # | Topic | Focus |
-|:--|:-----|:------|
-| 01 | Firewall (UFW) | Default deny, rate limiting |
-| 02 | SSH Keys | Key-based auth |
-| 03 | Security Banners | MOTD, legal |
-| 04 | SSH Agent Forwarding | Jump servers, bastion |
-| 05 | Fail2Ban | SSH jail, brute-force mitigation |
-| 06 | Final Automation | `auto-secure.sh` — repo/docs only (no separate walkthrough video) |
+
+| #   | Topic                | Focus                                                             |
+| --- | -------------------- | ----------------------------------------------------------------- |
+| 01  | Firewall (UFW)       | Default deny, rate limiting                                       |
+| 02  | SSH Keys             | Key-based auth                                                    |
+| 03  | Security Banners     | MOTD, legal                                                       |
+| 04  | SSH Agent Forwarding | Jump servers, bastion                                             |
+| 05  | Fail2Ban             | SSH jail, brute-force mitigation                                  |
+| 06  | Final Automation     | `auto-secure.sh` — repo/docs only (no separate walkthrough video) |
+
 
 ---
 
 ## 🔜 Near term (1–2 months) — Red Team (Nmap)
 
-Six sections in [`labs/offensive-red/nmap/`](./labs/offensive-red/nmap/); videos are added as they go live.
+Six sections in `[labs/offensive-red/nmap/](./labs/offensive-red/nmap/)`; videos are added as they go live.
 
-| # | Topic | Focus |
-|:--|:-----|:------|
-| 01 | [Discovery](./labs/offensive-red/nmap/01-discovery/) | Host discovery, TCP SYN ping vs ICMP |
-| 02 | [SYN Scan](./labs/offensive-red/nmap/02-syn-scan/) | `-sS -Pn` baseline |
-| 03 | [Service Detection](./labs/offensive-red/nmap/03-service-detection/) | `-sV`, banners |
-| 04 | [Speed vs Depth](./labs/offensive-red/nmap/04-speed-vs-depth/) | Targeted ports vs full range |
-| 05 | [Output / Reporting](./labs/offensive-red/nmap/05-output-reporting/) | `-oN`, `-oA` |
-| 06 | [Safe NSE](./labs/offensive-red/nmap/06-safe-nse/) | `--script safe` |
+
+| #   | Topic                                                                | Focus                                |
+| --- | -------------------------------------------------------------------- | ------------------------------------ |
+| 01  | [Discovery](./labs/offensive-red/nmap/01-discovery/)                 | Host discovery, TCP SYN ping vs ICMP |
+| 02  | [SYN Scan](./labs/offensive-red/nmap/02-syn-scan/)                   | `-sS -Pn` baseline                   |
+| 03  | [Service Detection](./labs/offensive-red/nmap/03-service-detection/) | `-sV`, banners                       |
+| 04  | [Speed vs Depth](./labs/offensive-red/nmap/04-speed-vs-depth/)       | Targeted ports vs full range         |
+| 05  | [Output / Reporting](./labs/offensive-red/nmap/05-output-reporting/) | `-oN`, `-oA`                         |
+| 06  | [Safe NSE](./labs/offensive-red/nmap/06-safe-nse/)                   | `--script safe`                      |
+
 
 ---
 
@@ -61,4 +65,4 @@ Six sections in [`labs/offensive-red/nmap/`](./labs/offensive-red/nmap/); videos
 
 - One video = one main skill; playlists do not mix tools.
 - Each lab maps Red action → Blue mitigation (Purple workflow).
-- New labs follow the shared template: [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md).
+- New labs follow the shared template: `[labs/LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md)`.

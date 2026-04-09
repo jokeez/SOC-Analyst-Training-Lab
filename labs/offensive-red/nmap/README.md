@@ -27,7 +27,7 @@ Focused Nmap learning track with short labs and clear blue-team takeaways.
 | 06  | [Safe NSE Intro](./06-safe-nse/)               | `--script safe` basics                                           | ✅      |
 
 
-**Walkthrough (Lab 06):** [▶️ Watch on YouTube](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL) — full Nmap track index is in the [repository root `README.md](../../../README.md#-video-index)`.
+**Walkthrough (Lab 06):** [▶️ Watch on YouTube](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL) — full Nmap track index is in the [repository root `README.md`](../../../README.md#-video-index).
 
 ## 📊 Track status
 
@@ -44,7 +44,7 @@ Focused Nmap learning track with short labs and clear blue-team takeaways.
 
 - [commands.md](./commands.md) - quick flags cheat sheet.
 - [scripts/](./scripts/) - reusable Nmap scripts:
-  - `**nmap-labs-menu.sh`** — interactive menu that runs Labs **01–06** (calls each lab script in its folder; good entry point for beginners).
+  - `nmap-labs-menu.sh` — interactive menu that runs Labs **01–06** (calls each lab script in its folder; good entry point for beginners).
   - `nmap-scan.sh` (recon workflow)
   - `nmap-defend-check.sh` (defensive checks)
 

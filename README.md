@@ -56,7 +56,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Track                     | Scope                                                                     | Status                       |
 | ------------------------- | ------------------------------------------------------------------------- | ---------------------------- |
 | **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation | ✅ **01–06** (docs + scripts) |
-| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Lab 00 on video; more planned)         | 🚧 In progress               |
+| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Lab 00 on video + Lab 01 docs ready)   | 🚧 In progress               |
 | **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                    | 🧱 Building                  |
 | **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                            | ⏳ Planned                    |
 
@@ -70,7 +70,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | --------------- | ------------- | -------------------------- | ------- | ----------------- |
 | Linux Hardening | 06            | 05 videos + 01 docs/script | ✅       | 🟢 Stable         |
 | Nmap            | 06            | 06 videos                  | ✅       | 🟢 Complete block |
-| Hydra           | 00+           | 01 video (Lab 00)          | ✅       | 🟡 Expanding      |
+| Hydra           | 00+           | 01 video (Lab 00) + Lab 01 docs | ✅    | 🟡 Expanding      |
 | Defensive Blue  | planned block | 0 public labs              | 🧱      | 🔵 Design phase   |
 
 
@@ -109,7 +109,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 03  | Security Banners     | [▶️ Watch](https://youtu.be/ILBxHbIw74Y)                             |
 | 04  | SSH Agent Forwarding | [▶️ Watch](https://youtu.be/NOCivaFgoXc)                             |
 | 05  | Fail2Ban             | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6)         |
-| 06  | Final Automation     | [Docs + `auto-secure.sh](./Linux-Hardening/Lab06-Final-Automation/)` |
+| 06  | Final Automation     | [Docs + `auto-secure.sh`](./Linux-Hardening/Lab06-Final-Automation/) |
 
 
 ### Nmap (published)
@@ -123,15 +123,16 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 04  | Speed vs Depth                     | [▶️ Watch](https://youtu.be/uDrDLcGPx1A)                         |
 | 05  | Output & Reporting                 | [▶️ Watch](https://youtu.be/Jk_YhxfHPCw)                         |
 | 06  | Safe NSE Intro                     | [▶️ Watch](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL)     |
-| —   | Interactive menu (runs Labs 01–06) | [Docs + `nmap-labs-menu.sh](./labs/offensive-red/nmap/scripts/)` |
+| —   | Interactive menu (runs Labs 01–06) | [Docs + `nmap-labs-menu.sh`](./labs/offensive-red/nmap/scripts/) |
 
 
-### Hydra (published)
+### Hydra
 
 
-| #   | Lab                                                    | Video                                    |
-| --- | ------------------------------------------------------ | ---------------------------------------- |
-| 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA) |
+| #   | Lab                                                    | Video                                              |
+| --- | ------------------------------------------------------ | -------------------------------------------------- |
+| 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)           |
+| 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [Docs (ready)](./labs/offensive-red/hydra/01-ssh/) |
 
 
 ---
@@ -169,7 +170,7 @@ Every lab should follow the same engineering format:
 7. **Defensive takeaway** — SOC-relevant conclusion.
 8. **MITRE ATT&CK mapping** — 1-3 techniques with detection + mitigation notes.
 
-Template: `[labs/LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md)`
+Template: [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md)
 
 ---
 
@@ -178,14 +179,14 @@ Template: `[labs/LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md)`
 
 | Path                                             | Purpose                                           |
 | ------------------------------------------------ | ------------------------------------------------- |
-| `[Linux-Hardening/](./Linux-Hardening/)`         | Linux series (labs 01–06)                         |
-| `[labs/offensive-red/](./labs/offensive-red/)`   | Red Team tools and workflows (Nmap/Hydra/...)     |
-| `[labs/defensive-blue/](./labs/defensive-blue/)` | Blue Team detections, mitigations, and case notes |
-| `[labs/LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md)` | Standard template for consistent lab quality      |
-| `[docs/](./docs/)`                               | Portfolio site (GitHub Pages)                     |
-| `[scripts/](./scripts/)`                         | Shared automation helpers                         |
-| `[ROADMAP.md](./ROADMAP.md)`                     | High-level timeline and next steps                |
-| `[LICENSE](./LICENSE)`                           | MIT — code and docs in this repo                  |
+| [`Linux-Hardening/`](./Linux-Hardening/)         | Linux series (labs 01–06)                         |
+| [`labs/offensive-red/`](./labs/offensive-red/)   | Red Team tools and workflows (Nmap/Hydra/...)     |
+| [`labs/defensive-blue/`](./labs/defensive-blue/) | Blue Team detections, mitigations, and case notes |
+| [`labs/LAB_TEMPLATE.md`](./labs/LAB_TEMPLATE.md) | Standard template for consistent lab quality       |
+| [`docs/`](./docs/)                               | Portfolio site (GitHub Pages)                     |
+| [`scripts/`](./scripts/)                         | Shared automation helpers                         |
+| [`ROADMAP.md`](./ROADMAP.md)                     | High-level timeline and next steps                |
+| [`LICENSE`](./LICENSE)                           | MIT — code and docs in this repo                  |
 
 
 ---
@@ -226,7 +227,7 @@ chmod +x auto-secure.sh
 ./auto-secure.sh
 ```
 
-- **Write-up:** `[Lab06-Final-Automation.md](./Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md)`  
+- **Write-up:** [`Lab06-Final-Automation.md`](./Linux-Hardening/Lab06-Final-Automation/Lab06-Final-Automation.md)  
 - **Order:** Lab 02 (keys) → Lab 03 (port/banner) → Lab 01 (UFW) → Lab 05 (Fail2Ban). Lab 04 is **client-side** only.  
 - **Before:** your public key in `~/.ssh/authorized_keys` and a tested SSH login; keep a spare session open.
 
