@@ -1,7 +1,8 @@
 # Hydra 01 - SSH brute-force (local lab)
 
-**Status:** Ready for recording  
-**Scope:** Local Docker target on `127.0.0.1:2222` only
+**Walkthrough:** [▶️ Watch on YouTube](https://youtu.be/-rTCzClzzZQ)  
+**Status:** Published  
+**Scope:** Local Docker target on `127.0.0.1:2222` only (or adapt to your authorized lab host)
 
 ## 1) Scenario
 

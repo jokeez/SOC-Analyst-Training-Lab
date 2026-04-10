@@ -58,5 +58,10 @@
     "id": "H16hmZXzrYA",
     "title": "Hydra Lab 00: Speed vs Rate Limiting (Custom Range)",
     "track": "hydra"
+  },
+  {
+    "id": "-rTCzClzzZQ",
+    "title": "Hydra Lab 01: SSH Brute-Force + Fail2Ban Bridge",
+    "track": "hydra"
   }
 ]

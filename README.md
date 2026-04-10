@@ -54,7 +54,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Track                     | Scope                                                                                                | Status                       |
 | ------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------- |
 | **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation                            | ✅ **01–06** (docs + scripts) |
-| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Lab 00 on video; Labs 01–03 Docker + docs + `hydra-labs-menu.sh`) | 🚧 In progress               |
+| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–01 on video; 02–03 docs + `hydra-labs-menu.sh`) | 🚧 In progress               |
 | **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                               | 🧱 Building                  |
 | **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                                       | ⏳ Planned                    |
 
@@ -68,7 +68,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | --------------- | ------------- | ----------------------------------------- | ------- | ----------------- |
 | Linux Hardening | 06            | 05 videos + 01 docs/script                | ✅       | 🟢 Stable         |
 | Nmap            | 06            | 06 videos                                 | ✅       | 🟢 Complete block |
-| Hydra           | 00–03         | 01 video (Lab 00); Labs 01–03 docs + menu | ✅       | 🟡 Expanding      |
+| Hydra           | 00–03         | 02 videos (Labs 00–01); 02–03 docs + menu | ✅       | 🟡 Expanding      |
 | Defensive Blue  | planned block | 0 public labs                             | 🧱      | 🔵 Design phase   |
 
 
@@ -79,7 +79,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 ## 🚢 What is shipping now
 
 - Nmap core block is published end-to-end (Labs 01-06).
-- Hydra `00-speed-vs-detection` is now part of the offensive pipeline; **Labs 01–03** add SSH, HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
+- Hydra **Labs 00–01** have walkthroughs on YouTube; **Labs 01–03** in repo add SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
 - Shared orchestration scripts are kept in repo for reproducible execution (Nmap menu, Hydra menu).
 - Documentation style is unified around scenario -> validation -> takeaway.
 
@@ -107,7 +107,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 03  | Security Banners     | [▶️ Watch](https://youtu.be/ILBxHbIw74Y)                             |
 | 04  | SSH Agent Forwarding | [▶️ Watch](https://youtu.be/NOCivaFgoXc)                             |
 | 05  | Fail2Ban             | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6)         |
-| 06  | Final Automation     | [Docs + `auto-secure.sh](./Linux-Hardening/Lab06-Final-Automation/)` |
+| 06  | Final Automation     | [Docs + auto-secure.sh](./Linux-Hardening/Lab06-Final-Automation/) |
 
 
 ### Nmap (published)
@@ -121,7 +121,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 04  | Speed vs Depth                     | [▶️ Watch](https://youtu.be/uDrDLcGPx1A)                         |
 | 05  | Output & Reporting                 | [▶️ Watch](https://youtu.be/Jk_YhxfHPCw)                         |
 | 06  | Safe NSE Intro                     | [▶️ Watch](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL)     |
-| —   | Interactive menu (runs Labs 01–06) | [Docs + `nmap-labs-menu.sh](./labs/offensive-red/nmap/scripts/)` |
+| —   | Interactive menu (runs Labs 01–06) | [Docs + nmap-labs-menu.sh](./labs/offensive-red/nmap/scripts/) |
 
 
 ### Hydra
@@ -130,10 +130,10 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | #   | Lab                                                    | Video / materials                                                  |
 | --- | ------------------------------------------------------ | ------------------------------------------------------------------ |
 | 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)                           |
-| 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [Docs (ready)](./labs/offensive-red/hydra/01-ssh/)                 |
+| 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) · [Docs](./labs/offensive-red/hydra/01-ssh/) |
 | 02  | HTTP form (`http-post-form`, PHP + Apache)             | [Docs (ready)](./labs/offensive-red/hydra/02-http-form/)           |
 | 03  | FTP (Pure-FTPd, PASV on localhost)                     | [Docs (ready)](./labs/offensive-red/hydra/03-ftp/)                 |
-| —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + `hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/)` |
+| —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/) |
 
 
 ---

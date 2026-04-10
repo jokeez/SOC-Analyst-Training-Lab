@@ -20,28 +20,30 @@ Lab 00 (Flask web app) is the intro to **speed vs detection** on a custom traini
 ## Sections
 
 
-| #   | Folder                                         | Description                                                                 | Video / status        |
-| --- | ---------------------------------------------- | --------------------------------------------------------------------------- | --------------------- |
-| 00  | [speed-vs-detection](./00-speed-vs-detection/) | Local Flask app: login + live log + defense toggles (speed vs detection)    | [▶️ Watch](https://youtu.be/H16hmZXzrYA) |
-| 01  | [01-ssh](./01-ssh/)                            | SSH brute-force vs Docker OpenSSH; Fail2Ban bridge                          | 🎬 Ready to record    |
-| 02  | [02-http-form](./02-http-form/)                | `http-post-form` vs PHP login (Apache)                                      | 🎬 Ready to record    |
-| 03  | [03-ftp](./03-ftp/)                            | FTP brute-force vs Pure-FTPd (PASV on localhost)                            | 🎬 Ready to record    |
+| #   | Folder                                         | Description                                                              | Video / status                           |
+| --- | ---------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------- |
+| 00  | [speed-vs-detection](./00-speed-vs-detection/) | Local Flask app: login + live log + defense toggles (speed vs detection) | [▶️ Watch](https://youtu.be/H16hmZXzrYA) |
+| 01  | [01-ssh](./01-ssh/)                            | SSH brute-force vs Docker OpenSSH; Fail2Ban bridge                       | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) |
+| 02  | [02-http-form](./02-http-form/)                | `http-post-form` vs PHP login (Apache)                                   | 🎬 Ready to record                       |
+| 03  | [03-ftp](./03-ftp/)                            | FTP brute-force vs Pure-FTPd (PASV on localhost)                         | 🎬 Ready to record                       |
+
 
 ## 📊 Track status
 
 
 | Metric              | Value                                      |
 | ------------------- | ------------------------------------------ |
-| Published videos    | 1 (Lab 00)                                 |
+| Published videos    | 2 (Labs 00–01)                             |
 | Docker service labs | 3 (01 SSH, 02 HTTP form, 03 FTP)           |
 | Shared launcher     | `scripts/hydra-labs-menu.sh`               |
-| Command index       | [`commands.md`](./commands.md)             |
+| Command index       | `[commands.md](./commands.md)`             |
 | Current state       | Reproducible compose + scripts + artifacts |
+
 
 ## Shared files
 
-- [`commands.md`](./commands.md) — track-level index linking to each lab’s `commands.md`.
-- [`scripts/`](./scripts/) — `hydra-labs-menu.sh`: interactive **start/stop** for Labs **01–03** (calls each folder’s `start-lab.sh` / `stop-lab.sh`).
+- `[commands.md](./commands.md)` — track-level index linking to each lab’s `commands.md`.
+- `[scripts/](./scripts/)` — `hydra-labs-menu.sh`: interactive **start/stop** for Labs **01–03** (calls each folder’s `start-lab.sh` / `stop-lab.sh`).
 
 ### Quick start (menu)
 
