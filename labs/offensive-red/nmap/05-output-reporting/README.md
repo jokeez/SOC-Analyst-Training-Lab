@@ -23,3 +23,10 @@ chmod +x nmap-output-reporting.sh
 - Keep baseline snapshots by date.
 - Compare old and new reports to detect drift.
 - Track changes as part of regular security reviews.
+
+## Files
+
+| File | Purpose |
+|:-----|:--------|
+| [nmap-output-reporting.sh](./nmap-output-reporting.sh) | Automation script for report generation |
+| [commands.md](./commands.md) | Quick command cheat sheet for recording/practice |

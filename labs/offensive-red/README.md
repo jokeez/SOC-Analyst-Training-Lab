@@ -14,7 +14,7 @@ Hands-on offensive labs for controlled reconnaissance, service analysis, and saf
 | Tool              | Focus area                                                  | Current state                     |
 | ----------------- | ----------------------------------------------------------- | --------------------------------- |
 | [Nmap](./nmap/)   | Discovery, SYN scan, service detection, reporting, safe NSE | ✅ Published block (01-06)         |
-| [Hydra](./hydra/) | Brute-force simulation vs defensive controls                | 🚧 Lab 00 live, expansion planned |
+| [Hydra](./hydra/) | Brute-force simulation vs defensive controls                | ✅ Labs 00–03 in repo + `hydra-labs-menu.sh` |
 
 
 ## 📌 Folder standard

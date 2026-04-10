@@ -23,3 +23,10 @@ chmod +x nmap-speed-vs-depth.sh
 - Use targeted checks for quick validation.
 - Run full scans periodically for baseline reviews.
 - Alert on newly opened unexpected ports.
+
+## Files
+
+| File | Purpose |
+|:-----|:--------|
+| [nmap-speed-vs-depth.sh](./nmap-speed-vs-depth.sh) | Automation script for targeted vs full-range comparison |
+| [commands.md](./commands.md) | Quick command cheat sheet for recording/practice |

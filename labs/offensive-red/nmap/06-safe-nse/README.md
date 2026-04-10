@@ -24,3 +24,10 @@ chmod +x nmap-safe-nse.sh
 - Run scripts only inside authorized scope.
 - Review script output for exposed services and weak configs.
 - Document findings and remediation tasks.
+
+## Files
+
+| File | Purpose |
+|:-----|:--------|
+| [nmap-safe-nse.sh](./nmap-safe-nse.sh) | Automation script for safe NSE run |
+| [commands.md](./commands.md) | Quick command cheat sheet for recording/practice |
