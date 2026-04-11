@@ -3,20 +3,22 @@
 **MiroslavSec** — practical cybersecurity portfolio for SOC / Blue Team growth with real lab evidence.
 **Developed independently by MiroslavSec. Not affiliated with any educational institution.**
 
+<p align="center">
+  <img src="./docs/assets/banner.png" alt="SOC Analyst Training Lab Banner" />
+</p>
 
+[![Status Active](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Focus Purple Team Workflow](https://img.shields.io/badge/Focus-Purple%20Team-7c3aed?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Content Labs + Videos](https://img.shields.io/badge/Content-Labs%20%2B%20Videos-2563eb?style=for-the-badge)](https://www.youtube.com/@MiroslavSec1)
 
-[Status Active](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Focus Purple Team Workflow](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Content Labs + Videos](https://www.youtube.com/@MiroslavSec1)
+[![Last Commit](https://img.shields.io/github/last-commit/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
+[![Repo Size](https://img.shields.io/github/repo-size/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Issues](https://img.shields.io/github/issues/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
+[![Stars](https://img.shields.io/github/stars/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
 
-[Last Commit](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
-[Repo Size](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Issues](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
-[Stars](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
-
-[GitHub Portfolio](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[LinkedIn Connect](https://www.linkedin.com/in/miroslav-u-7152233b5/)
-[YouTube Watch Labs](https://www.youtube.com/@MiroslavSec1)
+[![GitHub Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
+[![YouTube Watch Labs](https://img.shields.io/badge/YouTube-Watch%20Labs-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@MiroslavSec1)
 
 > Building public, repeatable SOC skills: attack simulation, defensive validation, and clear documentation.
 
@@ -51,12 +53,12 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 ## 📊 Tracks overview
 
 
-| Track                     | Scope                                                                                                | Status                       |
-| ------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------- |
-| **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation                            | ✅ **01–06** (docs + scripts) |
+| Track                     | Scope                                                                                      | Status                       |
+| ------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------- |
+| **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation                  | ✅ **01–06** (docs + scripts) |
 | **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–01 on video; 02–03 docs + `hydra-labs-menu.sh`) | 🚧 In progress               |
-| **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                               | 🧱 Building                  |
-| **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                                       | ⏳ Planned                    |
+| **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                     | 🧱 Building                  |
+| **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                             | ⏳ Planned                    |
 
 
 ---
@@ -100,40 +102,40 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 ### Linux Hardening
 
 
-| #   | Lab                  | Video / materials                                                    |
-| --- | -------------------- | -------------------------------------------------------------------- |
-| 01  | Firewall (UFW)       | [▶️ Watch](https://youtu.be/zgGrlMZAEcM)                             |
-| 02  | SSH Keys             | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc)                             |
-| 03  | Security Banners     | [▶️ Watch](https://youtu.be/ILBxHbIw74Y)                             |
-| 04  | SSH Agent Forwarding | [▶️ Watch](https://youtu.be/NOCivaFgoXc)                             |
-| 05  | Fail2Ban             | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6)         |
+| #   | Lab                  | Video / materials                                                  |
+| --- | -------------------- | ------------------------------------------------------------------ |
+| 01  | Firewall (UFW)       | [▶️ Watch](https://youtu.be/zgGrlMZAEcM)                           |
+| 02  | SSH Keys             | [▶️ Watch](https://youtu.be/ULZVP8h6Uvc)                           |
+| 03  | Security Banners     | [▶️ Watch](https://youtu.be/ILBxHbIw74Y)                           |
+| 04  | SSH Agent Forwarding | [▶️ Watch](https://youtu.be/NOCivaFgoXc)                           |
+| 05  | Fail2Ban             | [▶️ Watch](https://youtu.be/KGf3O-4LXkQ?si=MVaqIkHsp7_x4Et6)       |
 | 06  | Final Automation     | [Docs + auto-secure.sh](./Linux-Hardening/Lab06-Final-Automation/) |
 
 
 ### Nmap (published)
 
 
-| #   | Lab                                | Video / materials                                                |
-| --- | ---------------------------------- | ---------------------------------------------------------------- |
-| 01  | Host Discovery + Fast Scan         | [▶️ Watch](https://youtu.be/abxydAApkko)                         |
-| 02  | SYN Scan Basics                    | [▶️ Watch](https://youtu.be/vPJW-t86lgc)                         |
-| 03  | Service Detection                  | [▶️ Watch](https://youtu.be/vn8LKGCSVQk)                         |
-| 04  | Speed vs Depth                     | [▶️ Watch](https://youtu.be/uDrDLcGPx1A)                         |
-| 05  | Output & Reporting                 | [▶️ Watch](https://youtu.be/Jk_YhxfHPCw)                         |
-| 06  | Safe NSE Intro                     | [▶️ Watch](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL)     |
+| #   | Lab                                | Video / materials                                              |
+| --- | ---------------------------------- | -------------------------------------------------------------- |
+| 01  | Host Discovery + Fast Scan         | [▶️ Watch](https://youtu.be/abxydAApkko)                       |
+| 02  | SYN Scan Basics                    | [▶️ Watch](https://youtu.be/vPJW-t86lgc)                       |
+| 03  | Service Detection                  | [▶️ Watch](https://youtu.be/vn8LKGCSVQk)                       |
+| 04  | Speed vs Depth                     | [▶️ Watch](https://youtu.be/uDrDLcGPx1A)                       |
+| 05  | Output & Reporting                 | [▶️ Watch](https://youtu.be/Jk_YhxfHPCw)                       |
+| 06  | Safe NSE Intro                     | [▶️ Watch](https://youtu.be/wZI1miGav1w?si=kNtczLp2BnUpQLrL)   |
 | —   | Interactive menu (runs Labs 01–06) | [Docs + nmap-labs-menu.sh](./labs/offensive-red/nmap/scripts/) |
 
 
 ### Hydra
 
 
-| #   | Lab                                                    | Video / materials                                                  |
-| --- | ------------------------------------------------------ | ------------------------------------------------------------------ |
-| 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)                           |
+| #   | Lab                                                    | Video / materials                                                                     |
+| --- | ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)                                              |
 | 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) · [Docs](./labs/offensive-red/hydra/01-ssh/) |
-| 02  | HTTP form (`http-post-form`, PHP + Apache)             | [Docs (ready)](./labs/offensive-red/hydra/02-http-form/)           |
-| 03  | FTP (Pure-FTPd, PASV on localhost)                     | [Docs (ready)](./labs/offensive-red/hydra/03-ftp/)                 |
-| —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/) |
+| 02  | HTTP form (`http-post-form`, PHP + Apache)             | [Docs (ready)](./labs/offensive-red/hydra/02-http-form/)                              |
+| 03  | FTP (Pure-FTPd, PASV on localhost)                     | [Docs (ready)](./labs/offensive-red/hydra/03-ftp/)                                    |
+| —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/)                      |
 
 
 ---
