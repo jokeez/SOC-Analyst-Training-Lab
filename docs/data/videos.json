@@ -63,5 +63,10 @@
     "id": "-rTCzClzzZQ",
     "title": "Hydra Lab 01: SSH Brute-Force + Fail2Ban Bridge",
     "track": "hydra"
+  },
+  {
+    "id": "v7YRHpcEzHg",
+    "title": "Hydra Lab 02: HTTP Form Brute-Force (Apache/PHP)",
+    "track": "hydra"
   }
 ]

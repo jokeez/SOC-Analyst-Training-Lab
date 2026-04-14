@@ -1,6 +1,7 @@
 # Hydra 02 - HTTP form brute-force (local lab)
 
-**Status:** Ready for recording  
+**Walkthrough:** [▶️ Watch on YouTube](https://youtu.be/v7YRHpcEzHg)  
+**Status:** Published  
 **Scope:** Local Docker target on `http://127.0.0.1:8080/` only
 
 ## 1) Scenario

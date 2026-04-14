@@ -3,22 +3,20 @@
 **MiroslavSec** — practical cybersecurity portfolio for SOC / Blue Team growth with real lab evidence.
 **Developed independently by MiroslavSec. Not affiliated with any educational institution.**
 
-<p align="center">
-  <img src="./docs/assets/banner.png" alt="SOC Analyst Training Lab Banner" />
-</p>
 
-[![Status Active](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[![Focus Purple Team Workflow](https://img.shields.io/badge/Focus-Purple%20Team-7c3aed?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[![Content Labs + Videos](https://img.shields.io/badge/Content-Labs%20%2B%20Videos-2563eb?style=for-the-badge)](https://www.youtube.com/@MiroslavSec1)
 
-[![Last Commit](https://img.shields.io/github/last-commit/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
-[![Repo Size](https://img.shields.io/github/repo-size/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[![Issues](https://img.shields.io/github/issues/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
-[![Stars](https://img.shields.io/github/stars/jokeez/SOC-Analyst-Training-Lab?style=flat-square)](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
+[Status Active](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[Focus Purple Team Workflow](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[Content Labs + Videos](https://www.youtube.com/@MiroslavSec1)
 
-[![GitHub Portfolio](https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
-[![YouTube Watch Labs](https://img.shields.io/badge/YouTube-Watch%20Labs-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@MiroslavSec1)
+[Last Commit](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
+[Repo Size](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[Issues](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
+[Stars](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
+
+[GitHub Portfolio](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[LinkedIn Connect](https://www.linkedin.com/in/miroslav-u-7152233b5/)
+[YouTube Watch Labs](https://www.youtube.com/@MiroslavSec1)
 
 > Building public, repeatable SOC skills: attack simulation, defensive validation, and clear documentation.
 
@@ -53,12 +51,12 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 ## 📊 Tracks overview
 
 
-| Track                     | Scope                                                                                      | Status                       |
-| ------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------- |
-| **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation                  | ✅ **01–06** (docs + scripts) |
-| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–01 on video; 02–03 docs + `hydra-labs-menu.sh`) | 🚧 In progress               |
-| **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                     | 🧱 Building                  |
-| **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                             | ⏳ Planned                    |
+| Track                     | Scope                                                                                   | Status                       |
+| ------------------------- | --------------------------------------------------------------------------------------- | ---------------------------- |
+| **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation               | ✅ **01–06** (docs + scripts) |
+| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–02 on video; 03 docs + `hydra-labs-menu.sh`) | 🚧 In progress               |
+| **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                  | 🧱 Building                  |
+| **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                          | ⏳ Planned                    |
 
 
 ---
@@ -66,12 +64,12 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 ## 📈 Progress dashboard
 
 
-| Series          | Labs total    | Published                                 | In repo | Status            |
-| --------------- | ------------- | ----------------------------------------- | ------- | ----------------- |
-| Linux Hardening | 06            | 05 videos + 01 docs/script                | ✅       | 🟢 Stable         |
-| Nmap            | 06            | 06 videos                                 | ✅       | 🟢 Complete block |
-| Hydra           | 00–03         | 02 videos (Labs 00–01); 02–03 docs + menu | ✅       | 🟡 Expanding      |
-| Defensive Blue  | planned block | 0 public labs                             | 🧱      | 🔵 Design phase   |
+| Series          | Labs total    | Published                              | In repo | Status            |
+| --------------- | ------------- | -------------------------------------- | ------- | ----------------- |
+| Linux Hardening | 06            | 05 videos + 01 docs/script             | ✅       | 🟢 Stable         |
+| Nmap            | 06            | 06 videos                              | ✅       | 🟢 Complete block |
+| Hydra           | 00–03         | 03 videos (Labs 00–02); 03 docs + menu | ✅       | 🟡 Expanding      |
+| Defensive Blue  | planned block | 0 public labs                          | 🧱      | 🔵 Design phase   |
 
 
 > Target rhythm: steady weekly releases with one-tool-per-series discipline.
@@ -81,7 +79,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 ## 🚢 What is shipping now
 
 - Nmap core block is published end-to-end (Labs 01-06).
-- Hydra **Labs 00–01** have walkthroughs on YouTube; **Labs 01–03** in repo add SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
+- Hydra **Labs 00–02** have walkthroughs on YouTube; **Labs 01–03** in repo add SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
 - Shared orchestration scripts are kept in repo for reproducible execution (Nmap menu, Hydra menu).
 - Documentation style is unified around scenario -> validation -> takeaway.
 
@@ -129,13 +127,13 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 ### Hydra
 
 
-| #   | Lab                                                    | Video / materials                                                                     |
-| --- | ------------------------------------------------------ | ------------------------------------------------------------------------------------- |
-| 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)                                              |
-| 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) · [Docs](./labs/offensive-red/hydra/01-ssh/) |
-| 02  | HTTP form (`http-post-form`, PHP + Apache)             | [Docs (ready)](./labs/offensive-red/hydra/02-http-form/)                              |
-| 03  | FTP (Pure-FTPd, PASV on localhost)                     | [Docs (ready)](./labs/offensive-red/hydra/03-ftp/)                                    |
-| —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/)                      |
+| #   | Lab                                                    | Video / materials                                                                           |
+| --- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)                                                    |
+| 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) · [Docs](./labs/offensive-red/hydra/01-ssh/)       |
+| 02  | HTTP form (`http-post-form`, PHP + Apache)             | [▶️ Watch](https://youtu.be/v7YRHpcEzHg) · [Docs](./labs/offensive-red/hydra/02-http-form/) |
+| 03  | FTP (Pure-FTPd, PASV on localhost)                     | [Docs (ready)](./labs/offensive-red/hydra/03-ftp/)                                          |
+| —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/)                            |
 
 
 ---
