@@ -72,7 +72,8 @@ hydra -l labuser -P words-demo.txt 127.0.0.1 -s 8080 -t 1 -W 2 -V -o artifacts/h
 ## 8) MITRE ATT&CK mapping
 
 
-| ATT&CK Tactic     | Technique ID | Why it matches this lab                    | Detection idea                                  | Mitigation                                      |
-| ----------------- | ------------ | ------------------------------------------ | ----------------------------------------------- | ----------------------------------------------- |
-| Credential Access | T1110.001    | Password guessing against a web login form | Spike in failed logins; POST rate to `/login`   | Rate limit, MFA, WAF, lockout, strong passwords |
+| ATT&CK Tactic     | Technique ID | Why it matches this lab                    | Detection idea                                | Mitigation                                      |
+| ----------------- | ------------ | ------------------------------------------ | --------------------------------------------- | ----------------------------------------------- |
+| Credential Access | T1110.001    | Password guessing against a web login form | Spike in failed logins; POST rate to `/login` | Rate limit, MFA, WAF, lockout, strong passwords |
+
 
