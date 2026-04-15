@@ -5,18 +5,18 @@
 
 
 
-[Status Active](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Focus Purple Team Workflow](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Content Labs + Videos](https://www.youtube.com/@MiroslavSec1)
+[![Status](https://img.shields.io/badge/status-active-22c55e?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Focus](https://img.shields.io/badge/focus-purple%20team-8b5cf6?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Content](https://img.shields.io/badge/content-labs%20%2B%20videos-0ea5e9?style=for-the-badge)](https://www.youtube.com/@MiroslavSec1)
 
-[Last Commit](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
-[Repo Size](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[Issues](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
-[Stars](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/jokeez/SOC-Analyst-Training-Lab?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab/commits)
+[![Repo Size](https://img.shields.io/github/repo-size/jokeez/SOC-Analyst-Training-Lab?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![Issues](https://img.shields.io/github/issues/jokeez/SOC-Analyst-Training-Lab?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab/issues)
+[![Stars](https://img.shields.io/github/stars/jokeez/SOC-Analyst-Training-Lab?style=for-the-badge)](https://github.com/jokeez/SOC-Analyst-Training-Lab/stargazers)
 
-[GitHub Portfolio](https://github.com/jokeez/SOC-Analyst-Training-Lab)
-[LinkedIn Connect](https://www.linkedin.com/in/miroslav-u-7152233b5/)
-[YouTube Watch Labs](https://www.youtube.com/@MiroslavSec1)
+[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-111827?style=for-the-badge&logo=github)](https://github.com/jokeez/SOC-Analyst-Training-Lab)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0a66c2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/miroslav-u-7152233b5/)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch%20Labs-ff0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@MiroslavSec1)
 
 > Building public, repeatable SOC skills: attack simulation, defensive validation, and clear documentation.
 
@@ -91,6 +91,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 
 - Daily: TryHackMe learning and notes  
 - Weekly: batch recording and scheduled publishing  
+- SQL Injection local demo is ready; walkthrough links will be added after recording  
 - Rule: **one tool per series** (no mixing tools in one video block)
 
 ---
