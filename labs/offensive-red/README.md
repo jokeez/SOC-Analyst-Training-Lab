@@ -6,6 +6,7 @@ Hands-on offensive labs for controlled reconnaissance, service analysis, and saf
 
 - [Nmap](./nmap/)
 - [Hydra](./hydra/)
+- [SQL Injection](./sql-injection/)
 - [Back to Labs workspace](../README.md)
 
 ## 📦 Tool map
@@ -15,6 +16,7 @@ Hands-on offensive labs for controlled reconnaissance, service analysis, and saf
 | ----------------- | ----------------------------------------------------------- | --------------------------------- |
 | [Nmap](./nmap/)   | Discovery, SYN scan, service detection, reporting, safe NSE | ✅ Published block (01-06)         |
 | [Hydra](./hydra/) | Brute-force simulation vs defensive controls                | ✅ Labs 00–03 in repo + `hydra-labs-menu.sh` |
+| [SQL Injection](./sql-injection/) | SQLi simulation + SOC monitoring-first response | 🎬 Filming prep complete |
 
 
 ## 📌 Folder standard
