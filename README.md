@@ -54,7 +54,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Track                     | Scope                                                                                   | Status                       |
 | ------------------------- | --------------------------------------------------------------------------------------- | ---------------------------- |
 | **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation               | ✅ **01–06** (docs + scripts) |
-| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–02 on video; 03 docs + `hydra-labs-menu.sh`), SQLi local training track (video plan) | 🚧 In progress               |
+| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–03 on video + `hydra-labs-menu.sh`), SQLi local training track (video plan) | 🚧 In progress               |
 | **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                  | 🧱 Building                  |
 | **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                          | ⏳ Planned                    |
 
@@ -68,7 +68,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | --------------- | ------------- | -------------------------------------- | ------- | ----------------- |
 | Linux Hardening | 06            | 05 videos + 01 docs/script             | ✅       | 🟢 Stable         |
 | Nmap            | 06            | 06 videos                              | ✅       | 🟢 Complete block |
-| Hydra           | 00–03         | 03 videos (Labs 00–02); 03 docs + menu | ✅       | 🟡 Expanding      |
+| Hydra           | 00–03         | 04 videos (Labs 00–03) + docs/menu      | ✅       | 🟢 Complete block |
 | SQL Injection   | 00            | 0 videos yet (recording plan ready)    | ✅       | 🟡 Planned videos |
 | Defensive Blue  | planned block | 0 public labs                          | 🧱      | 🔵 Design phase   |
 
@@ -80,7 +80,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 ## 🚢 What is shipping now
 
 - Nmap core block is published end-to-end (Labs 01-06).
-- Hydra **Labs 00–02** have walkthroughs on YouTube; **Labs 01–03** in repo add SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
+- Hydra **Labs 00–03** have walkthroughs on YouTube; repo includes SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
 - SQL Injection local demo target is prepared in repo with vulnerable/safe mode, monitoring board, and admin training dashboard (video links to be added after recording).
 - Shared orchestration scripts are kept in repo for reproducible execution (Nmap menu, Hydra menu).
 - Documentation style is unified around scenario -> validation -> takeaway.
@@ -135,7 +135,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 00  | Speed vs detection (local range, rate limit / lockout) | [▶️ Watch](https://youtu.be/H16hmZXzrYA)                                                    |
 | 01  | SSH brute-force + Fail2Ban bridge (lab + scripts)      | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) · [Docs](./labs/offensive-red/hydra/01-ssh/)       |
 | 02  | HTTP form (`http-post-form`, PHP + Apache)             | [▶️ Watch](https://youtu.be/v7YRHpcEzHg) · [Docs](./labs/offensive-red/hydra/02-http-form/) |
-| 03  | FTP (Pure-FTPd, PASV on localhost)                     | [Docs (ready)](./labs/offensive-red/hydra/03-ftp/)                                          |
+| 03  | FTP (Pure-FTPd, PASV on localhost)                     | [▶️ Watch](https://youtu.be/UAhLfay0G-w) · [Docs](./labs/offensive-red/hydra/03-ftp/)        |
 | —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/)                            |
 
 ### SQL Injection

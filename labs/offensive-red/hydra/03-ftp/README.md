@@ -1,6 +1,7 @@
 # Hydra 03 - FTP brute-force (local lab)
 
-**Status:** Ready for recording  
+**Status:** Published  
+**Video:** [Hydra Lab 03 FINAL - FTP Brute-Force (Local Docker)](https://youtu.be/UAhLfay0G-w)  
 **Scope:** Local Docker target on `127.0.0.1:2121` only (FTP; passive ports 30000–30009)
 
 ## 1) Scenario

@@ -25,7 +25,7 @@ Lab 00 (Flask web app) is the intro to **speed vs detection** on a custom traini
 | 00  | [speed-vs-detection](./00-speed-vs-detection/) | Local Flask app: login + live log + defense toggles (speed vs detection) | [▶️ Watch](https://youtu.be/H16hmZXzrYA) |
 | 01  | [01-ssh](./01-ssh/)                            | SSH brute-force vs Docker OpenSSH; Fail2Ban bridge                       | [▶️ Watch](https://youtu.be/-rTCzClzzZQ) |
 | 02  | [02-http-form](./02-http-form/)                | `http-post-form` vs PHP login (Apache)                                   | [▶️ Watch](https://youtu.be/v7YRHpcEzHg) |
-| 03  | [03-ftp](./03-ftp/)                            | FTP brute-force vs Pure-FTPd (PASV on localhost)                         | 🎬 Ready to record                       |
+| 03  | [03-ftp](./03-ftp/)                            | FTP brute-force vs Pure-FTPd (PASV on localhost)                         | [▶️ Watch](https://youtu.be/UAhLfay0G-w) |
 
 
 ## 📊 Track status
@@ -33,7 +33,7 @@ Lab 00 (Flask web app) is the intro to **speed vs detection** on a custom traini
 
 | Metric              | Value                                      |
 | ------------------- | ------------------------------------------ |
-| Published videos    | 3 (Labs 00–02)                             |
+| Published videos    | 4 (Labs 00–03)                             |
 | Docker service labs | 3 (01 SSH, 02 HTTP form, 03 FTP)           |
 | Shared launcher     | `scripts/hydra-labs-menu.sh`               |
 | Command index       | `[commands.md](./commands.md)`             |

@@ -68,5 +68,10 @@
     "id": "v7YRHpcEzHg",
     "title": "Hydra Lab 02: HTTP Form Brute-Force (Apache/PHP)",
     "track": "hydra"
+  },
+  {
+    "id": "UAhLfay0G-w",
+    "title": "Hydra Lab 03: FTP Brute-Force (Pure-FTPd, Local Docker)",
+    "track": "hydra"
   }
 ]
