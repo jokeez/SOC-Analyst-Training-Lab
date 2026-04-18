@@ -25,6 +25,7 @@ jobs:
         with:
           python-version: '3.11'
 
+      # update_videos.py merges RSS titles with the existing file and preserves per-video ``track`` for site filters.
       - name: Fetch YouTube RSS and update videos.json
         env:
           YOUTUBE_CHANNEL_ID: ${{ vars.YOUTUBE_CHANNEL_ID }}

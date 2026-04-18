@@ -6,10 +6,11 @@ High-level plan for labs, videos, and portfolio evolution.
 
 ## Progress Snapshot
 
-- Nmap Series: `<progress value="4" max="6"></progress>` **4/6 (67%)**
-- Linux Hardening: `<progress value="6" max="6"></progress>` **6/6 (100%)**
-- Blue Team Labs: `<progress value="1" max="6"></progress>` **1/6 (17%)**
-- SOC Analyst Path: `<progress value="2" max="10"></progress>` **2/10 (20%)**
+- Linux Hardening: `<progress value="6" max="6"></progress>` **6/6 (100%)** — docs + scripts; Lab 06 is repo-first (no walkthrough video).
+- Nmap Series: `<progress value="6" max="6"></progress>` **6/6 (100%)** — Labs 01–06 published on video.
+- Hydra Series: `<progress value="4" max="4"></progress>` **4/4 (100%)** — Labs 00–03 published on video + `hydra-labs-menu.sh`.
+- Blue Team (`labs/defensive-blue/`): `<progress value="0" max="6"></progress>` **0/6 (0%)** — standards + README; first hands-on labs next (e.g. Wireshark SOC triage baseline).
+- SOC Analyst Path: `<progress value="3" max="10"></progress>` **3/10 (30%)** — Linux + Nmap + Hydra video blocks closed; SQLi demo in repo; Blue labs starting.
 
 ---
 
@@ -28,27 +29,18 @@ High-level plan for labs, videos, and portfolio evolution.
 
 ---
 
-## 🔜 Near term (1–2 months) — Red Team (Nmap)
+## 🔜 Near term (1–2 months)
 
-Six sections in `[labs/offensive-red/nmap/](./labs/offensive-red/nmap/)`; videos are added as they go live.
-
-
-| #   | Topic                                                                | Focus                                |
-| --- | -------------------------------------------------------------------- | ------------------------------------ |
-| 01  | [Discovery](./labs/offensive-red/nmap/01-discovery/)                 | Host discovery, TCP SYN ping vs ICMP |
-| 02  | [SYN Scan](./labs/offensive-red/nmap/02-syn-scan/)                   | `-sS -Pn` baseline                   |
-| 03  | [Service Detection](./labs/offensive-red/nmap/03-service-detection/) | `-sV`, banners                       |
-| 04  | [Speed vs Depth](./labs/offensive-red/nmap/04-speed-vs-depth/)       | Targeted ports vs full range         |
-| 05  | [Output / Reporting](./labs/offensive-red/nmap/05-output-reporting/) | `-oN`, `-oA`                         |
-| 06  | [Safe NSE](./labs/offensive-red/nmap/06-safe-nse/)                   | `--script safe`                      |
-
+- **Defensive Blue baseline** ([labs/defensive-blue](./labs/defensive-blue/)) — first numbered labs (e.g. Wireshark triage, log timelines, validation of controls) with the shared [LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md).
+- **SQL Injection (Red track)** — walkthrough videos for the [sql-injection](./labs/offensive-red/sql-injection/) local demo; links synced in root `README.md` and the GitHub Pages site.
+- **Optional Red expansions** — new tools only when there is a clear Purple story (e.g. controlled phishing, password auditing) — same “base series → advanced block” rhythm as Nmap/Hydra.
 
 ---
 
 ## 📅 Mid term (3–6 months)
 
-- **Hydra track** (`labs/offensive-red/hydra/`) — SSH, HTTP form, FTP, with linked defensive controls.
-- **Blue Team block** (`labs/defensive-blue/`) — detections, logging checks, response mini-cases.
+- **Hydra track** — ✅ Labs 00–03 shipped; revisit only for a deliberate “Phase B” or cross-topic (e.g. SIEM-only view of the same events).
+- **Blue Team block** — grow `labs/defensive-blue/` beyond README: detection notes, PCAP workflows, mini–incident response write-ups.
 - **Windows / AD** — baseline hardening and first SOC-focused checks.
 
 ---

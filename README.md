@@ -91,7 +91,8 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 
 - Daily: TryHackMe learning and notes  
 - Weekly: batch recording and scheduled publishing  
-- SQL Injection local demo is ready; walkthrough links will be added after recording  
+- **Defensive Blue:** first numbered labs in [`labs/defensive-blue/`](./labs/defensive-blue/) (e.g. Wireshark SOC triage baseline) + matching YouTube playlist  
+- **SQL Injection (Red track):** local demo is ready; walkthrough links will be added after recording  
 - Rule: **one tool per series** (no mixing tools in one video block)
 
 ---
@@ -143,9 +144,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | #   | Lab                                                            | Video / materials                                              |
 | --- | -------------------------------------------------------------- | -------------------------------------------------------------- |
 | 00  | Local training demo (vulnerable vs safe + monitoring + admin) | [Docs (ready)](./labs/offensive-red/sql-injection/00-local-demo/) |
-| 01  | SQLi fundamentals and login bypass                             | 🎬 Planned (link after recording)                              |
-| 02  | SQLi detection and SOC triage                                  | 🎬 Planned (link after recording)                              |
-
+| —   | Follow-up topics (fundamentals, detection/triage angles, etc.) | 🎬 Planned — split into separate videos after Lab 00 walkthrough |
 
 ---
 

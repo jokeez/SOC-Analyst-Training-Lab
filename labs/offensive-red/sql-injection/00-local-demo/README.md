@@ -77,9 +77,11 @@ Use this section as an on-screen prompt during demos or class practice.
 
 ## Artifacts
 
-- `artifacts/training.db` - SQLite lab database
-- `artifacts/events.log` - event stream for monitoring narrative
+- `artifacts/training.db` — SQLite lab database (created at runtime; **not committed** to Git).
+- `artifacts/events.log` — newline-delimited JSON event stream for the monitoring page (runtime; **not committed**).
+
+Repository root `.gitignore` excludes `*.db` / `*.log` under this `artifacts/` path so local practice does not pollute commits.
 
 ## Notes
 
-- If old DB seed is already present, remove `artifacts/training.db` and restart to regenerate full seeded dataset.
+- If an old DB seed is already present, remove `artifacts/training.db` and restart the container to regenerate the full seeded dataset.
