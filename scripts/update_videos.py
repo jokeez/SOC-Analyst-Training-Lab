@@ -2,7 +2,7 @@
 """
 Fetch latest videos from YouTube channel RSS and merge into docs/data/videos.json.
 
-Preserves per-video ``track`` (linux | nmap | hydra | sqli | blue) when updating so
+Preserves per-video ``track`` (linux | nmap | hydra | sqli | blue | hashcat | john) when updating so
 GitHub Pages filters keep working. New videos get ``track`` from the previous file
 or from title heuristics.
 
@@ -38,6 +38,10 @@ def infer_track(title: str) -> str:
     t = title.lower()
     if "nmap" in t:
         return "nmap"
+    if "hashcat" in t:
+        return "hashcat"
+    if "john the ripper" in t or ("john" in t and "ripper" in t) or re.search(r"\bjtr\b", t):
+        return "john"
     if "hydra" in t:
         return "hydra"
     if "sqli" in t or "sql injection" in t or "sql-injection" in t:

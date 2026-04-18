@@ -10,7 +10,7 @@ High-level plan for labs, videos, and portfolio evolution.
 - Nmap Series: `<progress value="6" max="6"></progress>` **6/6 (100%)** — Labs 01–06 published on video.
 - Hydra Series: `<progress value="4" max="4"></progress>` **4/4 (100%)** — Labs 00–03 published on video + `hydra-labs-menu.sh`.
 - Blue Team (`labs/defensive-blue/`): `<progress value="0" max="6"></progress>` **0/6 (0%)** — standards + README; first hands-on labs next (e.g. Wireshark SOC triage baseline).
-- SOC Analyst Path: `<progress value="3" max="10"></progress>` **3/10 (30%)** — Linux + Nmap + Hydra video blocks closed; SQLi demo in repo; Blue labs starting.
+- SOC Analyst Path: `<progress value="3" max="10"></progress>` **3/10 (30%)** — Linux + Nmap + Hydra video blocks closed; SQLi demo in repo; **Hashcat / John** lab skeleton next; Blue numbered labs after that mini-block.
 
 ---
 
@@ -31,9 +31,10 @@ High-level plan for labs, videos, and portfolio evolution.
 
 ## 🔜 Near term (1–2 months)
 
-- **Defensive Blue baseline** ([labs/defensive-blue](./labs/defensive-blue/)) — first numbered labs (e.g. Wireshark triage, log timelines, validation of controls) with the shared [LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md).
+- **Hashcat + John the Ripper (Red track)** — short baseline videos after Hydra: [hashcat](./labs/offensive-red/hashcat/) and [john-the-ripper](./labs/offensive-red/john-the-ripper/) (repo skeleton + Lab 01 placeholders); English on-screen captions; **lab-generated hashes only**.
 - **SQL Injection (Red track)** — walkthrough videos for the [sql-injection](./labs/offensive-red/sql-injection/) local demo; links synced in root `README.md` and the GitHub Pages site.
-- **Optional Red expansions** — new tools only when there is a clear Purple story (e.g. controlled phishing, password auditing) — same “base series → advanced block” rhythm as Nmap/Hydra.
+- **Defensive Blue baseline** ([labs/defensive-blue](./labs/defensive-blue/)) — first numbered labs (e.g. Wireshark triage) **after** the password-cracking mini-block, same [LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md) discipline.
+- **Optional Red expansions** — further tools only with a clear Purple story (e.g. controlled phishing) — same “base series → advanced block” rhythm as Nmap/Hydra.
 
 ---
 

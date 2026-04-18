@@ -59,8 +59,8 @@
                     </article>
                     <article class="proof-card">
                         <span class="proof-label">Current Focus</span>
-                        <strong class="proof-value">Blue + SQLi</strong>
-                        <span class="proof-meta">Defensive-blue lab baseline (e.g. Wireshark) + SQLi walkthrough queue</span>
+                        <strong class="proof-value">Hashcat · John · SQLi</strong>
+                        <span class="proof-meta">Red password track (skeleton + short videos) + SQLi walkthrough queue; Blue labs after</span>
                     </article>
                     <article class="proof-card">
                         <span class="proof-label">Learning Rhythm</span>
@@ -120,10 +120,12 @@
                 <div class="playlist-links">
                     <a href="https://www.youtube.com/@MiroslavSec1" class="btn btn-primary" target="_blank" rel="noopener noreferrer">@MiroslavSec1 — Channel</a>
                     <a href="https://www.youtube.com/@MiroslavSec1/videos" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">All videos</a>
+                    <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/hashcat" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Hashcat (labs)</a>
+                    <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/john-the-ripper" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">John the Ripper (labs)</a>
                     <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/defensive-blue" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Defensive Blue (labs)</a>
                     <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/sql-injection/00-local-demo" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">SQLi local demo docs</a>
                 </div>
-                <p class="playlist-note">Linux hardening: Labs <strong>01–05</strong> on video; Lab <strong>06</strong> (master script) is documented on GitHub only. <strong>Nmap</strong> Labs <strong>01–06</strong> and <strong>Hydra</strong> Labs <strong>00–03</strong> are complete on video. <strong>SQL Injection</strong> local demo is in repo; walkthroughs go on the Red/SQLi track when recorded. <strong>Defensive Blue</strong> playlist and numbered labs are building next (traffic &amp; log triage first).</p>
+                <p class="playlist-note">Linux hardening: Labs <strong>01–05</strong> on video; Lab <strong>06</strong> (master script) is documented on GitHub only. <strong>Nmap</strong> Labs <strong>01–06</strong> and <strong>Hydra</strong> Labs <strong>00–03</strong> are complete on video. <strong>Hashcat</strong> and <strong>John the Ripper</strong> lab skeletons are in repo for a short post-Hydra Red block (English captions). <strong>SQL Injection</strong> walkthroughs stay on the Red track. <strong>Defensive Blue</strong> numbered labs follow that mini-block (traffic &amp; log triage first).</p>
             </div>
         </section>
 
@@ -148,14 +150,24 @@
                         <span class="badge">Track complete (video)</span>
                     </article>
                     <article class="track-card progress">
+                        <h3>Hashcat</h3>
+                        <p>Offline cracking baseline — Lab 01 skeleton in repo; lab-generated hashes only; purple detection notes.</p>
+                        <span class="badge">Repo prep</span>
+                    </article>
+                    <article class="track-card progress">
+                        <h3>John the Ripper</h3>
+                        <p>Formats + wordlist baseline — Lab 01 skeleton in repo; pairs with Hashcat after Hydra.</p>
+                        <span class="badge">Repo prep</span>
+                    </article>
+                    <article class="track-card progress">
                         <h3>SQL Injection</h3>
                         <p>Local training demo in repo (vulnerable/safe mode, monitoring board, admin dashboard). Walkthroughs planned on the Red track.</p>
                         <span class="badge">Recording Plan</span>
                     </article>
-                    <article class="track-card progress">
+                    <article class="track-card planned">
                         <h3>Defensive Blue</h3>
-                        <p>Detection, PCAP/log triage, validation of controls — same lab template as Red; first numbered labs landing in <code>labs/defensive-blue/</code>.</p>
-                        <span class="badge">In progress</span>
+                        <p>Detection, PCAP/log triage, validation of controls — first numbered labs in <code>labs/defensive-blue/</code> after the Hashcat/John mini-block.</p>
+                        <span class="badge">Planned next</span>
                     </article>
                     <article class="track-card planned">
                         <h3>SOC Expansion</h3>
@@ -336,6 +348,24 @@
                         <span class="badge">Published</span>
                     </article>
                     <article class="lab-card lab-pentest">
+                        <span class="lab-number">Hashcat</span>
+                        <h3>01 Baseline (local hashes)</h3>
+                        <p>Offline workflow — lab-generated hashes only; purple takeaway on leak + KDF choice.</p>
+                        <div class="lab-links">
+                            <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/hashcat/01-baseline-local-hashes" class="link-doc" target="_blank" rel="noopener noreferrer">Docs</a>
+                        </div>
+                        <span class="badge">Skeleton</span>
+                    </article>
+                    <article class="lab-card lab-pentest">
+                        <span class="lab-number">John</span>
+                        <h3>01 Baseline (formats)</h3>
+                        <p>Formats, wordlist, <code>--show</code> — pairs with Hashcat after Hydra.</p>
+                        <div class="lab-links">
+                            <a href="https://github.com/jokeez/SOC-Analyst-Training-Lab/tree/main/labs/offensive-red/john-the-ripper/01-baseline-formats" class="link-doc" target="_blank" rel="noopener noreferrer">Docs</a>
+                        </div>
+                        <span class="badge">Skeleton</span>
+                    </article>
+                    <article class="lab-card lab-pentest">
                         <span class="lab-number">SQLi</span>
                         <h3>00 Local training demo</h3>
                         <p>Docker local target with vulnerable/safe SQL modes, monitoring timeline, and admin training panel.</p>
@@ -351,12 +381,14 @@
         <section id="videos" class="section section-alt">
             <div class="container">
                 <h2 class="section-title">Hands-On Videos</h2>
-                <p class="section-desc">Embedded from <code>data/videos.json</code> (per-video <code>track</code>). Linux Lab 06 (Final Automation) has no walkthrough video — GitHub only. Blue-track clips appear here when published.</p>
+                <p class="section-desc">Embedded from <code>data/videos.json</code> (per-video <code>track</code>). Linux Lab 06 (Final Automation) has no walkthrough video — GitHub only. Hashcat/John/Blue clips use their filters when you add entries.</p>
                 <div class="video-filters" id="video-filters">
                     <button class="video-filter active" type="button" data-track="all">All</button>
                     <button class="video-filter" type="button" data-track="linux">Linux</button>
                     <button class="video-filter" type="button" data-track="nmap">Nmap</button>
                     <button class="video-filter" type="button" data-track="hydra">Hydra</button>
+                    <button class="video-filter" type="button" data-track="hashcat">Hashcat</button>
+                    <button class="video-filter" type="button" data-track="john">John</button>
                     <button class="video-filter" type="button" data-track="sqli">SQLi</button>
                     <button class="video-filter" type="button" data-track="blue">Blue</button>
                 </div>

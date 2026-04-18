@@ -6,6 +6,8 @@ Hands-on offensive labs for controlled reconnaissance, service analysis, and saf
 
 - [Nmap](./nmap/)
 - [Hydra](./hydra/)
+- [Hashcat](./hashcat/)
+- [John the Ripper](./john-the-ripper/)
 - [SQL Injection](./sql-injection/)
 - [Back to Labs workspace](../README.md)
 
@@ -16,6 +18,8 @@ Hands-on offensive labs for controlled reconnaissance, service analysis, and saf
 | ----------------- | ----------------------------------------------------------- | --------------------------------- |
 | [Nmap](./nmap/)   | Discovery, SYN scan, service detection, reporting, safe NSE | ✅ Published block (01-06)         |
 | [Hydra](./hydra/) | Brute-force simulation vs defensive controls                | ✅ Labs 00–03 in repo + `hydra-labs-menu.sh` |
+| [Hashcat](./hashcat/) | Offline hash recovery (lab-generated material only)        | 🧱 Repo skeleton — videos after Hydra block |
+| [John the Ripper](./john-the-ripper/) | Offline cracking with John (formats, wordlists)             | 🧱 Repo skeleton — videos after Hydra block |
 | [SQL Injection](./sql-injection/) | SQLi simulation + SOC monitoring-first response | 🎬 Filming prep complete |
 
 

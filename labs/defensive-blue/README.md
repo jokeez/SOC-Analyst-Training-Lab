@@ -2,6 +2,8 @@
 
 This folder contains defensive labs and SOC-oriented mini-cases focused on **detection**, **evidence**, and **validation** of controls. It complements the Red track: same Purple mindset, but the **primary lens is the analyst** (traffic, logs, triage), not the attack tool demo.
 
+**Release order (portfolio):** the short **Hashcat / John the Ripper** Red mini-block is scheduled **before** the first numbered labs here — see root [`README.md`](../../README.md#-current-focus) and [`ROADMAP.md`](../../ROADMAP.md).
+
 ## 🧭 Quick links
 
 - [Back to Labs workspace](../README.md)

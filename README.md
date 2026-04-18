@@ -54,7 +54,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Track                     | Scope                                                                                   | Status                       |
 | ------------------------- | --------------------------------------------------------------------------------------- | ---------------------------- |
 | **Linux Hardening**       | UFW, SSH hardening, banners, agent forwarding, Fail2Ban, final automation               | ✅ **01–06** (docs + scripts) |
-| **Red Team (Offensive)**  | Nmap (Labs 01–06 on video), Hydra (Labs 00–03 on video + `hydra-labs-menu.sh`), SQLi local training track (video plan) | 🚧 In progress               |
+| **Red Team (Offensive)**  | Nmap + Hydra on video; **Hashcat** + **John the Ripper** repo skeleton (offline cracking after Hydra); SQLi demo (video plan) | 🚧 In progress               |
 | **Blue Team (Defensive)** | Detection, hardening, logging, and incident mini-cases                                  | 🧱 Building                  |
 | **SOC expansion**         | Windows/AD, logging, SIEM, incident mini-cases                                          | ⏳ Planned                    |
 
@@ -69,8 +69,10 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Linux Hardening | 06            | 05 videos + 01 docs/script             | ✅       | 🟢 Stable         |
 | Nmap            | 06            | 06 videos                              | ✅       | 🟢 Complete block |
 | Hydra           | 00–03         | 04 videos (Labs 00–03) + docs/menu      | ✅       | 🟢 Complete block |
+| Hashcat         | 01 (planned)  | 0 videos (docs skeleton)                 | ✅       | 🟡 After Hydra    |
+| John the Ripper | 01 (planned)  | 0 videos (docs skeleton)                 | ✅       | 🟡 After Hydra    |
 | SQL Injection   | 00            | 0 videos yet (recording plan ready)    | ✅       | 🟡 Planned videos |
-| Defensive Blue  | planned block | 0 public labs                          | 🧱      | 🔵 Design phase   |
+| Defensive Blue  | planned block | 0 public labs                          | 🧱      | 🔵 After Red password track |
 
 
 > Target rhythm: steady weekly releases with one-tool-per-series discipline.
@@ -82,6 +84,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 - Nmap core block is published end-to-end (Labs 01-06).
 - Hydra **Labs 00–03** have walkthroughs on YouTube; repo includes SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
 - SQL Injection local demo target is prepared in repo with vulnerable/safe mode, monitoring board, and admin training dashboard (video links to be added after recording).
+- **Hashcat** and **John the Ripper** tracks: [lab skeletons](./labs/offensive-red/hashcat/) and [John](./labs/offensive-red/john-the-ripper/) (English docs) for short post-Hydra videos — lab-generated hashes only.
 - Shared orchestration scripts are kept in repo for reproducible execution (Nmap menu, Hydra menu).
 - Documentation style is unified around scenario -> validation -> takeaway.
 
@@ -91,8 +94,9 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 
 - Daily: TryHackMe learning and notes  
 - Weekly: batch recording and scheduled publishing  
-- **Defensive Blue:** first numbered labs in [`labs/defensive-blue/`](./labs/defensive-blue/) (e.g. Wireshark SOC triage baseline) + matching YouTube playlist  
+- **Hashcat / John the Ripper (Red track):** repo skeleton + Lab 01 placeholders — short English-caption series after Hydra (offline cracking, purple detection notes).  
 - **SQL Injection (Red track):** local demo is ready; walkthrough links will be added after recording  
+- **Defensive Blue:** numbered labs (e.g. Wireshark) after the password-cracking mini-block — see [`labs/defensive-blue/`](./labs/defensive-blue/)  
 - Rule: **one tool per series** (no mixing tools in one video block)
 
 ---
@@ -139,6 +143,18 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | 03  | FTP (Pure-FTPd, PASV on localhost)                     | [▶️ Watch](https://youtu.be/UAhLfay0G-w) · [Docs](./labs/offensive-red/hydra/03-ftp/)        |
 | —   | Interactive menu (starts/stops Labs 01–03 targets)     | [Docs + hydra-labs-menu.sh](./labs/offensive-red/hydra/scripts/)                            |
 
+### Hashcat (planned)
+
+| #   | Lab | Video / materials |
+| --- | --- | ------------------- |
+| 01  | Baseline — local lab hashes only | [Docs (skeleton)](./labs/offensive-red/hashcat/01-baseline-local-hashes/) · 🎬 Planned |
+
+### John the Ripper (planned)
+
+| #   | Lab | Video / materials |
+| --- | --- | ------------------- |
+| 01  | Baseline — formats and wordlist | [Docs (skeleton)](./labs/offensive-red/john-the-ripper/01-baseline-formats/) · 🎬 Planned |
+
 ### SQL Injection
 
 | #   | Lab                                                            | Video / materials                                              |
@@ -164,6 +180,7 @@ This portfolio follows a **Purple Team workflow**:
 | Network recon            | `nmap -sn`, `nmap -sV`             | Service minimization, banner strategy, segmentation | [Nmap Lab 01–03](./labs/offensive-red/nmap/)                                                   |
 | Port exposure mapping    | SYN scan (`-sS -Pn`)               | Firewall rule review + exposure baseline            | [Nmap Lab 02](./labs/offensive-red/nmap/02-syn-scan/)                                          |
 | Brute-force simulation   | Hydra (web lab + SSH / HTTP / FTP) | Fail2Ban, WAF/rate limits, SFTP vs FTP, keys/MFA    | [Hydra 00–03](./labs/offensive-red/hydra/) · [Linux Lab 05](./Linux-Hardening/Lab05-Fail2Ban/) |
+| Offline hash cracking    | Hashcat / John (lab-generated hashes) | Strong KDFs, protect backups & DC sync, MFA for online paths, monitor credential theft | [Hashcat track](./labs/offensive-red/hashcat/) · [John track](./labs/offensive-red/john-the-ripper/) |
 | SQL injection simulation | SQLi local demo (`vulnerable` / `safe`) | Parameterized queries, input validation, query-event monitoring | [SQLi 00 local demo](./labs/offensive-red/sql-injection/00-local-demo/) |
 | Safe service enumeration | NSE `--script safe`                | Logging + anomalous pattern monitoring              | [Nmap Lab 06](./labs/offensive-red/nmap/06-safe-nse/)                                          |
 | SSH hardening validation | Key-only auth / custom port checks | `sshd_config` policy + UFW + backup-and-verify flow | [Linux Lab 02/03/06](./Linux-Hardening/)                                                       |
@@ -194,6 +211,8 @@ Template: `[labs/LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md)`
 | `[Linux-Hardening/](./Linux-Hardening/)`                                   | Linux series (labs 01–06)                                 |
 | `[labs/offensive-red/](./labs/offensive-red/)`                             | Red Team tools and workflows (Nmap/Hydra/...)             |
 | `[labs/offensive-red/hydra/scripts/](./labs/offensive-red/hydra/scripts/)` | Hydra `hydra-labs-menu.sh` (start/stop Docker labs 01–03) |
+| `[labs/offensive-red/hashcat/](./labs/offensive-red/hashcat/)` | Offline hash cracking (Hashcat) — lab-only material |
+| `[labs/offensive-red/john-the-ripper/](./labs/offensive-red/john-the-ripper/)` | Offline hash cracking (John the Ripper) — lab-only material |
 | `[labs/offensive-red/sql-injection/00-local-demo/](./labs/offensive-red/sql-injection/00-local-demo/)` | SQLi local training target (Docker, monitoring, admin demo) |
 | `[labs/defensive-blue/](./labs/defensive-blue/)`                           | Blue Team detections, mitigations, and case notes         |
 | `[labs/LAB_TEMPLATE.md](./labs/LAB_TEMPLATE.md)`                           | Standard template for consistent lab quality              |
