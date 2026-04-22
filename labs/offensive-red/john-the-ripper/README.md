@@ -19,12 +19,34 @@ Both belong **after Hydra** in the learning path: online brute force → **offli
 
 ## Sections (skeleton)
 
-| #   | Folder | Description | Video |
-| --- | ------ | ----------- | ----- |
-| 01  | [01-baseline-formats](./01-baseline-formats/) | `unshadow`, format list, basic wordlist attack on lab hashes | 🎬 Planned |
+
+| #   | Folder                                        | Description                                                  | Video      |
+| --- | --------------------------------------------- | ------------------------------------------------------------ | ---------- |
+| 01  | [01-baseline-formats](./01-baseline-formats/) | Local synthetic hashes, format handling, basic wordlist + `--show` | 🎬 Ready to record |
+| 02  | [02-incremental-and-rules](./02-incremental-and-rules/) | Wordlist rules plus incremental mode on synthetic hashes | 🎬 Ready to record |
+
 
 ## Quick links
 
 - [Back to Red Team labs](../README.md)
 - [Command index](./commands.md)
 - [Main video index](../../../README.md#-video-index)
+
+## Quick start (Lab 01)
+
+```bash
+cd labs/offensive-red/john-the-ripper/01-baseline-formats
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+john --format=Raw-SHA256 --wordlist=input/wordlist-demo.txt input/hashes-raw-sha256.txt
+```
+
+## Quick start (Lab 02)
+
+```bash
+cd labs/offensive-red/john-the-ripper/02-incremental-and-rules
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+john --format=Raw-SHA256 --wordlist=input/base-words.txt --rules input/hashes-john-l02.txt
+john --format=Raw-SHA256 --incremental=Digits input/hashes-john-l02.txt --max-length=4
+```

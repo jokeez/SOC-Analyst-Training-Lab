@@ -3,3 +3,5 @@
 *.hash
 hashes.txt
 cracked.txt
+input/*.txt
+artifacts/*.txt

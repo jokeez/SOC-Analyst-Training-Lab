@@ -1,25 +1,49 @@
 # Hashcat — command index (lab track)
 
-Use the per-lab `commands.md` inside each numbered folder when it exists. This file is a **track-level** cheat sheet only.
+Use this file as a quick route map. Lab 01 below is ready-to-run with local generated material.
+
+## Lab 01 quick path (`01-baseline-local-hashes`)
+
+```bash
+cd labs/offensive-red/hashcat/01-baseline-local-hashes
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+
+hashcat -m 1400 -a 0 input/hashes-sha256.txt input/wordlist-demo.txt -o artifacts/cracked-sha256.txt
+cat artifacts/cracked-sha256.txt
+```
+
+## Lab 02 quick path (`02-rules-and-mask`)
+
+```bash
+cd labs/offensive-red/hashcat/02-rules-and-mask
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+
+# Wordlist + rule mutation
+hashcat -m 1400 -a 0 input/hashes-rules-mask.txt input/base-words.txt -r input/demo.rule -o artifacts/cracked-rules.txt
+
+# Mask pattern: 4 lower letters + 4 digits
+hashcat -m 1400 -a 3 input/hashes-rules-mask.txt '?l?l?l?l?d?d?d?d' -o artifacts/cracked-mask.txt
+```
 
 ## Common patterns (lab-safe)
 
 ```bash
-# Identify hash type (example; paths are illustrative)
-hashcat --example-hashes | grep -i bcrypt
-
-# Benchmark (local machine, no target material)
+# Benchmark only (no target material)
 hashcat -b
 
-# Crack with wordlist (only on hashes you own / are authorized to test)
-hashcat -m <mode> -a 0 hashes.txt wordlist.txt
+# Example hash type lookup
+hashcat --example-hashes | grep -i -n "sha256"
 ```
 
-## Flags to document per lab
+## Key flags
 
 - `-m` — hash mode (see `hashcat --help` / example hashes).
 - `-a` — attack mode (0 straight, 1 combinator, …).
-- `--force` — sometimes needed on odd OpenCL setups; document **why** if you use it.
+- `-o` — output cracked results to file.
+- `--show` — show cracked hashes from potfile for current target set.
+- `--force` — use only when OpenCL setup is unstable; document **why**.
 
 ## Safety
 

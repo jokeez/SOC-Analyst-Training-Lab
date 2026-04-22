@@ -1,17 +1,42 @@
 # John the Ripper — command index (lab track)
 
-Per-lab copies of commands live next to each lab README when recorded.
+## Lab 01 quick path (`01-baseline-formats`)
+
+```bash
+cd labs/offensive-red/john-the-ripper/01-baseline-formats
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+
+john --format=Raw-SHA256 --wordlist=input/wordlist-demo.txt input/hashes-raw-sha256.txt
+john --show --format=Raw-SHA256 input/hashes-raw-sha256.txt
+```
+
+## Lab 02 quick path (`02-incremental-and-rules`)
+
+```bash
+cd labs/offensive-red/john-the-ripper/02-incremental-and-rules
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+
+# Wordlist + rules
+john --format=Raw-SHA256 --wordlist=input/base-words.txt --rules input/hashes-john-l02.txt
+john --show --format=Raw-SHA256 input/hashes-john-l02.txt
+
+# Incremental demo (digits only, short length)
+john --format=Raw-SHA256 --incremental=Digits input/hashes-john-l02.txt --max-length=4
+john --show --format=Raw-SHA256 input/hashes-john-l02.txt
+```
 
 ## Common patterns (lab-safe)
 
 ```bash
-# List formats (jumbo build may show more)
+# List supported formats (jumbo builds show more)
 john --list=formats | head
 
-# Basic wordlist run (example file names only)
+# Generic wordlist run
 john --wordlist=wordlist.txt hashes.txt
 
-# Show cracked passwords for current session
+# Show cracked entries
 john --show hashes.txt
 ```
 

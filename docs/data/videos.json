@@ -73,5 +73,10 @@
     "id": "UAhLfay0G-w",
     "title": "Hydra Lab 03: FTP Brute-Force (Pure-FTPd, Local Docker)",
     "track": "hydra"
+  },
+  {
+    "id": "uwtM6-ZVCSg",
+    "title": "Hashcat Lab 01: Offline Hash Cracking Basics (SHA-256, Wordlist Attack)",
+    "track": "hashcat"
   }
 ]

@@ -2,3 +2,5 @@
 *.pot
 hashes.txt
 local_combined.txt
+input/*.txt
+artifacts/*.txt

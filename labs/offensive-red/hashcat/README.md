@@ -26,7 +26,8 @@ All docs and on-screen text for this series are **English**; command lines can b
 
 | #   | Folder                                                  | Description                                                | Video      |
 | --- | ------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
-| 01  | [01-baseline-local-hashes](./01-baseline-local-hashes/) | Workflow: identify hash type, wordlist run, output hygiene | 🎬 Planned |
+| 01  | [01-baseline-local-hashes](./01-baseline-local-hashes/) | Workflow: local hash generation, wordlist run, output hygiene | [▶️ Watch](https://youtu.be/uwtM6-ZVCSg) |
+| 02  | [02-rules-and-mask](./02-rules-and-mask/) | Candidate expansion using rule and mask attacks | 🎬 Ready to record |
 
 
 Further labs (02+) can cover rules, masks, or GPU notes — add folders when you lock the recording outline.
@@ -36,3 +37,22 @@ Further labs (02+) can cover rules, masks, or GPU notes — add folders when you
 - [Back to Red Team labs](../README.md)
 - [Command index](./commands.md)
 - [Main video index](../../../README.md#-video-index)
+
+## Quick start (Lab 01)
+
+```bash
+cd labs/offensive-red/hashcat/01-baseline-local-hashes
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+hashcat -m 1400 -a 0 input/hashes-sha256.txt input/wordlist-demo.txt -o artifacts/cracked-sha256.txt
+```
+
+## Quick start (Lab 02)
+
+```bash
+cd labs/offensive-red/hashcat/02-rules-and-mask
+chmod +x scripts/generate-lab-data.sh
+./scripts/generate-lab-data.sh
+hashcat -m 1400 -a 0 input/hashes-rules-mask.txt input/base-words.txt -r input/demo.rule -o artifacts/cracked-rules.txt
+hashcat -m 1400 -a 3 input/hashes-rules-mask.txt '?l?l?l?l?d?d?d?d' -o artifacts/cracked-mask.txt
+```
