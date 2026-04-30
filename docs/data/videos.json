@@ -78,5 +78,10 @@
     "id": "uwtM6-ZVCSg",
     "title": "Hashcat Lab 01: Offline Hash Cracking Basics (SHA-256, Wordlist Attack)",
     "track": "hashcat"
+  },
+  {
+    "id": "CZ6vZzXUn9k",
+    "title": "Hashcat Lab 02: Rules & Mask Attack (Realistic Password Patterns)",
+    "track": "hashcat"
   }
 ]

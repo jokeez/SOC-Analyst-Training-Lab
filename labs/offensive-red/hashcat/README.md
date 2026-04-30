@@ -27,10 +27,10 @@ All docs and on-screen text for this series are **English**; command lines can b
 | #   | Folder                                                  | Description                                                | Video      |
 | --- | ------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
 | 01  | [01-baseline-local-hashes](./01-baseline-local-hashes/) | Workflow: local hash generation, wordlist run, output hygiene | [▶️ Watch](https://youtu.be/uwtM6-ZVCSg) |
-| 02  | [02-rules-and-mask](./02-rules-and-mask/) | Candidate expansion using rule and mask attacks | 🎬 Ready to record |
+| 02  | [02-rules-and-mask](./02-rules-and-mask/) | Candidate expansion using rule and mask attacks | [▶️ Watch](https://youtu.be/CZ6vZzXUn9k) |
 
 
-Further labs (02+) can cover rules, masks, or GPU notes — add folders when you lock the recording outline.
+Further labs (03+) can cover benchmark depth, custom rule tuning, or GPU notes — add folders when you lock the recording outline.
 
 ## Quick links
 

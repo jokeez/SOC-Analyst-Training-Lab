@@ -1,6 +1,7 @@
 # Lab 02 — Rules and mask attacks (local hashes)
 
-**Status:** ready to record  
+**Status:** published  
+**Video:** [Hashcat Lab 02 — Rules & Mask Attack](https://youtu.be/CZ6vZzXUn9k)  
 **Focus:** move from plain wordlist to rule-based and mask-based candidate generation
 
 ## 1) Scenario

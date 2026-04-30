@@ -69,7 +69,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 | Linux Hardening | 06            | 05 videos + 01 docs/script             | ✅       | 🟢 Stable         |
 | Nmap            | 06            | 06 videos                              | ✅       | 🟢 Complete block |
 | Hydra           | 00–03         | 04 videos (Labs 00–03) + docs/menu      | ✅       | 🟢 Complete block |
-| Hashcat         | 01–02         | 1 video (Lab 01) + Lab 02 ready in repo | ✅       | 🟡 In progress    |
+| Hashcat         | 01–02         | 2 videos (Labs 01–02)                    | ✅       | 🟢 Complete block |
 | John the Ripper | 01 (planned)  | 0 videos (docs skeleton)                 | ✅       | 🟡 After Hydra    |
 | SQL Injection   | 00            | 0 videos yet (recording plan ready)    | ✅       | 🟡 Planned videos |
 | Defensive Blue  | planned block | 0 public labs                          | 🧱      | 🔵 After Red password track |
@@ -84,7 +84,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 - Nmap core block is published end-to-end (Labs 01-06).
 - Hydra **Labs 00–03** have walkthroughs on YouTube; repo includes SSH (Docker + scripts), HTTP form, and FTP targets with compose + `hydra-labs-menu.sh`.
 - SQL Injection local demo target is prepared in repo with vulnerable/safe mode, monitoring board, and admin training dashboard (video links to be added after recording).
-- **Hashcat** track: [Lab 01 video](https://youtu.be/uwtM6-ZVCSg) is published; [Lab 02 docs](./labs/offensive-red/hashcat/02-rules-and-mask/) are ready in repo (lab-generated hashes only).
+- **Hashcat** track: Labs 01–02 are published — [Lab 01](https://youtu.be/uwtM6-ZVCSg), [Lab 02](https://youtu.be/CZ6vZzXUn9k) (lab-generated hashes only).
 - **John the Ripper** track: [lab docs](./labs/offensive-red/john-the-ripper/) are prepared for the matching post-Hydra offline cracking block.
 - Shared orchestration scripts are kept in repo for reproducible execution (Nmap menu, Hydra menu).
 - Documentation style is unified around scenario -> validation -> takeaway.
@@ -95,7 +95,7 @@ This repository is **portfolio-first**: every block shows **what was done**, **h
 
 - Daily: TryHackMe learning and notes  
 - Weekly: batch recording and scheduled publishing  
-- **Hashcat / John the Ripper (Red track):** Hashcat Lab 01 published, Lab 02 + John labs in recording queue (offline cracking, purple detection notes).  
+- **Hashcat / John the Ripper (Red track):** Hashcat Labs 01–02 are published; John labs are in recording queue (offline cracking, purple detection notes).  
 - **SQL Injection (Red track):** local demo is ready; walkthrough links will be added after recording  
 - **Defensive Blue:** numbered labs (e.g. Wireshark) after the password-cracking mini-block — see [`labs/defensive-blue/`](./labs/defensive-blue/)  
 - Rule: **one tool per series** (no mixing tools in one video block)
@@ -149,7 +149,7 @@ Where a lab has a walkthrough, the link is below. **Shared / orchestration scrip
 | #   | Lab | Video / materials |
 | --- | --- | ------------------- |
 | 01  | Baseline — local lab hashes only | [▶️ Watch](https://youtu.be/uwtM6-ZVCSg) · [Docs](./labs/offensive-red/hashcat/01-baseline-local-hashes/) |
-| 02  | Rules + mask attack (candidate expansion) | [Docs](./labs/offensive-red/hashcat/02-rules-and-mask/) · 🎬 Planned |
+| 02  | Rules + mask attack (candidate expansion) | [▶️ Watch](https://youtu.be/CZ6vZzXUn9k) · [Docs](./labs/offensive-red/hashcat/02-rules-and-mask/) |
 
 ### John the Ripper (planned)
 
